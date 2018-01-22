@@ -1,0 +1,311 @@
+@import 'reset';
+@import 'vars';
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after { /* stylelint-disable-line */
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--black);
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.hide {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--pink);
+}
+
+.navigatie {
+  display: flex;
+  justify-content: space-around;
+  width: 95rem;
+  margin: 0 auto;
+  background-color: var(--blue);
+  padding: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.subNavigatie {
+  display: inline;
+  justify-content: flex-start;
+  width: 20rem;
+  background-color: var(--blue);
+  padding: 1.5rem;
+  font-size: 2.5rem;
+
+}
+
+.subNavigatie:hover {
+  background-color: var(--yellow);
+}
+
+/* header */
+
+.header {
+  background-color: var(--lightyellow);
+}
+
+.backgroundheader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+
+}
+
+.girl_bike {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 34.6rem;
+  z-index: 5;
+}
+
+.wvdm {
+  display: block;
+  justify-content: center;
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  padding-top: 28rem;
+  /* line-height: 6rem; */
+  font-size: 4.5rem;
+  color: var(--white);
+  line-height: 4rem;
+}
+
+.week {
+  color: var(--blue);
+  font-size: 8rem;
+}
+
+.mobiliteit {
+  font-size: 6rem;
+  background-color: var(--blue);
+  /* width: 25rem; */
+  color: var(--white);
+  padding: .1rem 1.5rem;
+  line-height: 10rem;
+}
+
+.datum {
+  font-size: 2rem;
+  color: var(--white);
+  padding-top: 5rem;
+}
+
+/* index */
+
+.flex {
+  display: flex;
+
+}
+
+/* CAR FREE FESTIVAL */
+
+.CFF_title {
+  font-size: 4rem;
+  margin-bottom: 3.5rem;
+
+}
+
+.tekstCFF {
+  margin-right: -25rem;
+}
+
+.carFreeFestival {
+  justify-content: flex-end;
+  /* margin-right: 5rem; */
+  margin-top: 10rem;
+
+}
+
+.pCarFreeFestival {
+  width: 30rem;
+
+}
+
+/* CAR FREE DAY */
+
+.carFreeDay {
+  margin-right: 5rem;
+  margin-top: -45rem;
+}
+
+.CFD_title {
+  font-size: 4rem;
+  margin-top: 30rem;
+  margin-left: -10rem;
+  margin-bottom: 3.5rem;
+}
+
+.pCarFreeDay {
+  width: 30rem;
+
+  margin-left: -5rem;
+}
+
+/* STRAPDAG */
+
+.strapdag {
+  justify-content: flex-end;
+  margin-bottom: 5rem;
+  margin-top: -15rem;
+}
+
+.driehoek {
+  background-image: url(../assets/images/driehoek.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 110rem;
+  height: 55rem;
+}
+
+.divStrapdag {
+  background-color: var(--lightyellow);
+  width: 30vw;
+  height: 22rem;
+  padding: 3rem;
+}
+
+.tekstStrapdag {
+  position: absolute;
+  margin-top: 14rem;
+
+}
+
+.Strapdag_title {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+
+}
+
+.kinderen {
+  font-size: 6rem;
+  background: var(--blue);
+  padding: 2.5rem 1rem;
+  margin-bottom: 3.5rem;
+  margin-left: -20rem;
+  display: inline-block;
+
+}
+
+.imageStrapdag {
+  position: absolute;
+  margin-top: -5rem;
+  margin-left: -40rem;
+
+}
+
+/* AUTOVRIJE ZONDAG */
+
+.autovrijeZondag {
+  justify-content: flex-end;
+}
+
+.AZ_title {
+  font-size: 4rem;
+  width: 10vw;
+  line-height: 4rem;
+  padding-bottom: 3rem;
+}
+
+.pAutovrijeZondag {
+  width: 25rem;
+}
+
+.divAutovrijeZondag {
+  margin-top: 8rem;
+  position: absolute;
+  margin-left: -35rem;
+
+}
+
+/* .imageAutovrijeZondag {
+  position: absolute;
+  justify-content: flex-end;
+} */
+
+/* eigen activiteit */
+
+.eigenActiviteit {
+  background-color: var(--blue);
+  width: 50rem;
+  height: 50rem;
+
+}
+
+.titleEigenActiviteit {
+  background-color: var(--yellow);
+  font-size: 3.6rem;
+  margin-top: 3.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.pEigenActiviteit {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 3rem;
+  width: 38rem;
+
+}
+
+.submitInschrijven {
+  font-size: 3.6rem;
+  background-color: var(--yellow);
+  padding: 1rem 3rem;
+  width: 27rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+
+}
+
+.autovrij_eigenActiviteit {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* footer */
+
+.titleSponsors {
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.sponsors {
+  margin: 5rem 20rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blauwelijnSponsors {
+  width: 100vw;
+  height: 4rem;
+  background-color: var(--blue);
+  margin-top: -1rem;
+}
