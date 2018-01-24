@@ -19,57 +19,17 @@
       <fieldset class="fieldsetSearch">
         <div class="zoekbalk">
           <img src="assets/images/search.svg" alt="" width="40" height="40" class="searchimage">
-          <input type="text" name="stad" class="searchinput" placeholder="Steden, activiteit, dag, ..."/>
+          <input type="search" name="query" class="searchinput" placeholder="Zoek een event..." id="search">
         </div>
-        <input type="submit" name="" value="Zoek" class="submitSearch">
+        <input type="submit" name="action" value="Zoek" class="submitSearch">
       </fieldset>
     </form>
   </section>
 
-  <section class="filter">
-    <h2 class="hide">Filters</h2>
-    <div>
-      <article>
-        <h2 class="filterTitle">Kies je activiteit aan de hand van</h2>
-        <div class="flex">
-          <input class="filterKinderen" type="submit" name="Kinderen" value="Kinderen">
-        </div>
-      </article>
-
-      <article>
-        <h2 class="filterTitle">Kies de plaats van je activiteit </h2>
-        <div class="plaats">
-          <label class="column">
-            <span>Postcode</span>
-            <input type="text" name="postcode" class="inputplaats inputPostcode" placeholder="8500"/>
-            <!-- <?php if(!empty($errors['postal'])) echo '<span class="error">' . $errors['postal'] . '</span>';?> -->
-          </label>
-          <label class="column">
-            <span>Stad</span>
-            <input type="text" name="stad" class="inputplaats inputplaatsStad" placeholder="Kortrijk"/>
-            <!-- <?php if(!empty($errors['city'])) echo '<span class="error">' . $errors['city'] . '</span>';?> -->
-          </label>
-        </div>
-      </article>
-    </div>
-    <article>
-      <h2 class="filterTitle">Kies je activiteit per dag</h2>
-      <ul class="filterDays">
-        <a href=""><li class="filterDay">Ma 16/09</li></a>
-        <a href=""><li class="filterDay">Di 17/09</li></a>
-        <a href=""><li class="filterDay">Woe 18/09</li></a>
-        <a href=""><li class="filterDay">Do 19/09</li></a>
-        <a href=""><li class="filterDay">Vrij 20/09</li></a>
-        <a href=""><li class="filterDay">Zat 21/09</li></a>
-        <a href=""><li class="filterDay">Zon 22/09</li></a>
-      </ul>
-      <input type="submit" name="" value="Zoek" class="submitFilterForm">
-    </article>
-
-  </section>
 
 
-  <!-- <section  class="filter">
+
+  <section  class="filter">
     <h2 class="hide">Filters</h2>
     <form action="index.php?page=activiteiten" method="post">
       <fieldset class="fieldsetFilter">
@@ -86,11 +46,11 @@
             <div class="plaats">
               <label class="column">
                 <span>Postcode</span>
-                <input type="text" name="postcode" class="inputplaats inputPostcode" placeholder="8500"/>
+                <input type="text" name="postal" class="inputplaats inputPostcode" placeholder="8500">
               </label>
               <label class="column">
                 <span>Stad</span>
-                <input type="text" name="stad" class="inputplaats inputplaatsStad" placeholder="Kortrijk"/>
+                <input type="text" name="city" class="inputplaats inputplaatsStad" placeholder="Kortrijk" id="city">
               </label>
             </div>
           </section>
@@ -98,20 +58,20 @@
 
         <section class="fieldsetFilterDiv1">
           <h2 class="filterTitle">Kies je activiteit per dag</h2>
-          <ul>
-            <a href=""><li>Ma</li></a>
-            <a href=""><li>Di</li></a>
-            <a href=""><li>Woe</li></a>
-            <a href=""><li>Do</li></a>
-            <a href=""><li>Vr</li></a>
-            <a href=""><li>Zat</li></a>
-            <a href=""><li>Zon</li></a>
+          <ul class="filterDays">
+            <a href=""><li class="filterDay">Ma 16/09</li></a>
+            <a href=""><li class="filterDay">Di 17/09</li></a>
+            <a href=""><li class="filterDay">Woe 18/09</li></a>
+            <a href=""><li class="filterDay">Do 19/09</li></a>
+            <a href=""><li class="filterDay">Vrij 20/09</li></a>
+            <a href=""><li class="filterDay">Zat 21/09</li></a>
+            <a href=""><li class="filterDay">Zon 22/09</li></a>
           </ul>
-        </section>
+          <input type="submit" name="action" value="Zoek" class="submitFilterForm">
 
       </fieldset>
     </form>
-  </section> -->
+  </section>
 
 
   <section class="events">

@@ -21,8 +21,12 @@
     <div class="tekstCFF">
       <h2 class="CFF_title">CAR FREE FESTIVAL</h2>
       <p class="pCarFreeFestival">De donderdag kan je genieten van Car Free Festival, een onderdeel van Car Free Day. Door Studio Brussel kan je op deze dag genieten van verschillende concerten op de bus, in treinen, op perrons en langs fietspaden. Ze zenden ook live uit vanuit een NMBS-station.</p>
+      <a href="index.php?page=detail&amp;id=22" class="ctahome">Meer info</a>
     </div>
+
     <img src="assets/images/carFreeFestival.png" alt="trein" width="442" height="665">
+
+
   </section>
 
   <section class="flex carFreeDay">
@@ -31,6 +35,7 @@
     <div>
       <h2 class="CFD_title">CAR FREE DAY</h2>
       <p class="pCarFreeDay">De donderdag vragen we werkgevers om één dag extra aandacht te besteden aan duurzame woon-werkmobiliteit en medewerkers aan te moedigen om zonder auto naar het werk te komen.</p>
+
     </div>
   </section>
 

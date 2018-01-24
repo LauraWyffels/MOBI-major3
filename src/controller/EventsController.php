@@ -13,11 +13,37 @@ class EventsController extends Controller {
 
   public function activiteiten() {
     $conditions = array();
+
+    //search op title
+    if (isset($_POST['query'])) {
+      $conditions[] = array(
+        'field' => 'title',
+        'comparator' => 'like',
+        'value' => $_POST['query']
+      );
+    }
+    //search op postcode
+    if (isset($_POST['postal'])) {
+      $conditions[] = array(
+        'field' => 'postal',
+        'comparator' => 'like',
+        'value' => $_POST['postal']
+      );
+    }
+
+    //search op stad
+    if (isset($_POST['city'])) {
+      $conditions[] = array(
+        'field' => 'city',
+        'comparator' => 'like',
+        'value' => $_POST['city']
+      );
+    }
+
     $this->set('title', 'activiteiten');
     $this->set('currentPage', 'activiteiten');
 
-    $EventDAO = new EventDAO();
-    $events = $EventDAO->search($conditions);
+    $events = $this->eventDAO->search($conditions);
     $this->set('events',$events);
   }
 
