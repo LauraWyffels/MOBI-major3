@@ -2,6 +2,20 @@
 require_once __DIR__ . '/DAO.php';
 class EventDAO extends DAO {
 
+  public function selectAll() {
+    $sql = 'SELECT * FROM `ma3_auto_events`';
+    $stmt = $this->pdo->prepare($sql);
+    return $stmt->fetchall(PDO::FETCH_ASSOC);
+  }
+
+  public function selectById($id) {
+    $sql = "SELECT * FROM `ma3_auto_events` WHERE `id` = :id";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id', $id);
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+  }
+
   public function search($conditions = array()) {
     $sql = "SELECT DISTINCT
       ma3_auto_events.*
@@ -72,13 +86,8 @@ class EventDAO extends DAO {
     return $result;
   }
 
-  public function selectById($id) {
-    $sql = "SELECT * FROM `ma3_auto_events` WHERE `id` = :id";
-    $stmt = $this->pdo->prepare($sql);
-    $stmt->bindValue(':id', $id);
-    $stmt->execute();
-    return $stmt->fetch(PDO::FETCH_ASSOC);
-  }
+
+
 
   private function _getEventIdsFromResult(&$result) {
     $eventIds = array();

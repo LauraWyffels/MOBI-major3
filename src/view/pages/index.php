@@ -1,14 +1,21 @@
-
-  <header class="header">
-    <!-- <img src="assets/images/header.png" alt="weekVanDeMobiliteit" width="1120" height="748" class="headerimage"> -->
-    <!-- <div  class="backgroundheader">
-      <img src="assets/images/backgroundheader.png" alt="weekVanDeMobiliteit" width="643" height="748">
-    </div>
-    <div class="girl_bike">
-      <img src="assets/images/bike_girl_left.png" alt="weekVanDeMobiliteit" width="415" height="402">
-      <img src="assets/images/bike_girl_right.png" alt="weekVanDeMobiliteit" width="415" height="402">
-    </div> -->
-  </header>
+<!-- <header class="header">
+  <div class="wvdm">
+    <p>
+      <span class="week">Week</span>
+     <br><span class="vande">van</span>
+     <br><span class="de">de</span>
+     <br><span class="mobiliteit">mobiliteit</span>
+     <br><span class="datum">16 - 22 september</span>
+   </p>
+  </div>
+  <div  class="backgroundheader">
+    <img src="assets/images/backgroundheader.png" alt="weekVanDeMobiliteit" width="643" height="748">
+  </div>
+  <div class="girl_bike">
+    <img src="assets/images/bike_girl_left.png" alt="weekVanDeMobiliteit" width="415" height="402">
+    <img src="assets/images/bike_girl_right.png" alt="weekVanDeMobiliteit" width="415" height="402">
+  </div>
+</header> -->
 <main>
   <section class="flex carFreeFestival">
     <div class="tekstCFF">

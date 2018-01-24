@@ -21,6 +21,13 @@ body {
   display: none;
 }
 
+.nav {
+  position: fixed;
+  z-index: 20;
+  width: 100vw;
+  margin: 0 auto;
+}
+
 li {
   list-style: none;
 }
@@ -30,8 +37,8 @@ a {
   color: var(--white);
 }
 
-a:hover {
-  color: var(--pink);
+.hoverNavigatie:hover {
+  border-bottom: var(--yellow) .3rem solid;
 }
 
 .navigatie {
@@ -40,25 +47,46 @@ a:hover {
   width: 95rem;
   margin: 0 auto;
   background-color: var(--blue);
-  padding: 1.5rem;
-  font-size: 2.5rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.navActiviteiten:hover .subNavigatie {
+  display: block;
 }
 
 .subNavigatie {
-  display: inline;
-  justify-content: flex-start;
+  display: none;
+  position: absolute;
   width: 20rem;
-  background-color: var(--blue);
-  padding: 1.5rem;
-  font-size: 2.5rem;
+  margin-left: -5.8rem;
+  padding-top: 1rem;
 
 }
 
-.subNavigatie:hover {
+.subNavigatieA {
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  padding: .5rem;
+}
+
+.active {
+  border-bottom: var(--yellow) .3rem solid;
+}
+
+.subNavigatieA:hover {
   background-color: var(--yellow);
 }
 
-/* header */
+.logo {
+  position: absolute;
+  width: 15rem;
+  height: 15.5rem;
+
+}
+
+/* header home */
 
 .header {
   background-color: var(--lightyellow);
@@ -112,6 +140,42 @@ a:hover {
   font-size: 2rem;
   color: var(--white);
   padding-top: 5rem;
+}
+
+/* header activiteiten */
+
+.headerActiviteiten {
+  background-color: var(--white);
+
+  z-index: -1;
+}
+
+.girl_bike2 {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 9.9rem;
+  z-index: 5;
+}
+
+.weekvdmobiliteit {
+  font-size: 2rem;
+  background-color: var(--blue);
+  padding: .1rem 6rem;
+  display: inline-block;
+}
+
+.titleActiviteit {
+  display: block;
+  justify-content: center;
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  padding-top: 10rem;
+  font-size: 7rem;
+  color: var(--white);
+  line-height: 4rem;
 }
 
 /* index */
@@ -286,6 +350,277 @@ a:hover {
 .autovrij_eigenActiviteit {
   justify-content: center;
   align-items: flex-end;
+}
+
+/* activiteiten overzicht */
+
+.search {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: -25rem;
+}
+
+.zoekbalk {
+  background-color: var(--yellow);
+  width: 50rem;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 5;
+}
+
+.searchimage {
+  width: 6rem;
+  height: 7rem;
+  padding-left: 1rem;
+}
+
+.searchinput {
+  margin: .5rem;
+  border: none;
+  outline: none;
+  height: 6rem;
+  font-size: 2rem;
+  width: 40rem;
+  padding-left: 1rem;
+  margin-right: 3.5rem;
+  margin-left: 2rem;
+  background-color: var(--yellow);
+  border-bottom: var(--white) .3rem solid;
+  color: var(--white);
+}
+
+.searchinput::placeholder {
+  color: var(--white);
+}
+
+.submitSearch {
+  background-color: var(--white);
+  color: var(--yellow);
+  font-size: 2.4rem;
+  z-index: 5;
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border: var(--white) .5rem solid;
+
+}
+
+.submitSearch:hover {
+  border: var(--yellow) .5rem solid;
+}
+
+.fieldsetSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fieldsetFilter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.filter {
+  background: var(--lightyellow);
+  width: 100vw;
+  height: 35rem;
+  display: flex;
+  justify-content: space-around;
+  color: var(--grey);
+}
+
+.filterTitle {
+  font-size: 2.4rem;
+  padding-top: 5rem;
+  color: #434242;
+}
+
+.filterKinderen {
+  background-color: var(--lightblue);
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 14rem;
+  color: var(--grey);
+}
+
+.filterKinderen:hover {
+  background-color: var(--grey);
+  color: var(--lightblue);
+}
+
+.filterKinderen:focus {
+  background-color: var(--grey);
+  color: var(--lightblue);
+  border: none;
+  outline: none;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  margin-right: 5rem;
+}
+
+.inputplaats {
+  background-color: var(--lightblue);
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+}
+
+.inputPostcode {
+  text-align: center;
+  width: 8rem;
+  height: 4rem;
+}
+
+.inputplaatsStad {
+  width: 20rem;
+  height: 4rem;
+  padding-left: 1rem;
+
+}
+
+.filterDays {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45rem;
+  text-align: center;
+
+}
+
+.filterDay {
+  color: #767575;
+  background-color: var(--lightblue);
+  width: 7rem;
+  font-size: 2rem;
+  margin: 2rem 2rem 2rem .1rem;
+}
+
+.filterDay:hover {
+  color: var(--lightblue);
+  background-color: var(--grey);
+}
+
+.filter:focus {
+  background-color: var(--grey);
+  color: var(--lightblue);
+  border: none;
+  outline: none;
+}
+
+.submitFilterForm {
+  background-color: var(--white);
+  color: var(--yellow);
+  font-size: 2.4rem;
+
+  margin-left: 35rem;
+  border: var(--white) .5rem solid;
+}
+
+.submitFilterForm:hover {
+  border: var(--yellow) .5rem solid;
+}
+
+.submitFilterForm:focus {
+  border: var(--yellow) .5rem solid;
+  outline: none;
+}
+
+.plaats {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.8rem;
+  color: #434242;
+}
+
+.events {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+
+}
+
+.eventArticle {
+  margin-bottom: 10rem;
+}
+
+.eventsImage {
+  width: 50rem;
+  height: 36rem;
+  object-fit: cover;
+  z-index: -4;
+
+}
+
+.eventTitle {
+  font-size: 3rem;
+  background-color: var(--pink);
+  color: var(--white);
+  width: 50rem;
+  height: 8.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 5rem;
+}
+
+.eventTimeTitle {
+  font: 1.8rem;
+  color: var(--white);
+  background-color: var(--yellow);
+  display: inline-block;
+  padding: .15rem 1.5rem;
+  padding-right: 5rem;
+}
+
+.eventsDriehoek {
+  position: absolute;
+  width: 50rem;
+  height: 36rem;
+  background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
+
+}
+
+.eventTimeDiv {
+  position: absolute;
+  margin-top: -15rem;
+
+}
+
+.eventTime {
+  margin-left: 3rem;
+}
+
+.eventInfo {
+  display: flex;
+  justify-content: space-between;
+  font: 2.4rem;
+}
+
+.eventsAdres {
+  font-weight: bold;
+}
+
+.eventsDatum {
+  text-align: right;
+}
+
+/* detail */
+
+.detailTitle {
+  width: 55rem;
+  margin: 0 auto;
+  line-height: 7rem;
 }
 
 /* footer */

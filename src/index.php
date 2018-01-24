@@ -11,10 +11,13 @@ $routes = array(
     'controller' => 'Pages',
     'action' => 'index'
   ),
-    'activiteiten' => array(
-      'controller' => 'Pages',
-      'action' => 'activiteiten'
-
+  'activiteiten' => array(
+    'controller' => 'Events',
+    'action' => 'activiteiten'
+  ),
+  'detail' => array(
+    'controller' => 'Events',
+    'action' => 'detail'
   )
 );
 

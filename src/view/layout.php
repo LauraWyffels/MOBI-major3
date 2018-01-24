@@ -7,61 +7,97 @@
   </head>
   <body>
 
-    <header>
-      <section class="header">
-        <div class="wvdm">
-          <p>
-            <span class="week">Week</span>
-           <br><span class="vande">van</span>
-           <br><span class="de">de</span>
-           <br><span class="mobiliteit">mobiliteit</span>
-           <br><span class="datum">16 - 22 september</span>
-         </p>
-        </div>
-        <div  class="backgroundheader">
-          <img src="assets/images/backgroundheader.png" alt="weekVanDeMobiliteit" width="643" height="748">
-        </div>
-        <div class="girl_bike">
-          <img src="assets/images/bike_girl_left.png" alt="weekVanDeMobiliteit" width="415" height="402">
-          <img src="assets/images/bike_girl_right.png" alt="weekVanDeMobiliteit" width="415" height="402">
-        </div>
-      </section>
-      <section>
-        <h1><a href="index.php"><span class="hide">Week van de mobiliteit</span></a></h1>
-          <nav>
-            <ul class="navigatie">
-              <li>
-                <a href="activiteiten.php" class="navActiviteiten hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?>">Activiteiten</a>
-              </li>
-<!--
-              <ul class="subNavigatie">
-                <li>
-                  <a href="#" class="hoverNavigatie">Alle activiteiten</a>
-                </li>
-                </ul>
-                <ul  class="subNavigatie">
-                <li>
-                  <a href="#" class="hoverNavigatie">Eigen activiteit</a>
-                </li>
-              </ul> -->
+    <?php if($currentPage == 'home'){
+    ?>
 
-              <li>
-                <a href="#" class="hoverNavigatie">Informatie</a>
-              </li>
-              <li>
-                <a href="#" class="hoverNavigatie">Scholen</a>
-              </li>
-              <li>
-                <a href="#" class="hoverNavigatie">Vorige edities</a>
-              </li>
-              <li>
-                <a href="#" class="hoverNavigatie">Contact</a>
-              </li>
-            </ul>
-
-          </nav>
-        </section>
+    <header class="header">
+      <div class="wvdm">
+        <p>
+          <span class="week">Week</span>
+         <br><span class="vande">van</span>
+         <br><span class="de">de</span>
+         <br><span class="mobiliteit">mobiliteit</span>
+         <br><span class="datum">16 - 22 september</span>
+       </p>
+      </div>
+      <div  class="backgroundheader">
+        <img src="assets/images/backgroundheader.png" alt="weekVanDeMobiliteit" width="643" height="748">
+      </div>
+      <div class="girl_bike">
+        <img src="assets/images/bike_girl_left.png" alt="weekVanDeMobiliteit" width="415" height="402">
+        <img src="assets/images/bike_girl_right.png" alt="weekVanDeMobiliteit" width="415" height="402">
+      </div>
     </header>
+
+    <nav>
+      <ul class="navigatie">
+        <li class="navActiviteiten">
+          <a href="index.php?page=activiteiten" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?>">Activiteiten</a>
+          <ul class="subNavigatie">
+            <li class="subNavigatieA">
+              <a href="index.php?page=activiteiten" class="a">Alle activiteiten</a>
+            </li>
+            <li class="subNavigatieA">
+              <a href="#" class="a">Eigen activiteit</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="hoverNavigatie">Informatie</a>
+        </li>
+        <li>
+          <a href="#" class="hoverNavigatie">Scholen</a>
+        </li>
+        <li>
+          <a href="#" class="hoverNavigatie">Vorige edities</a>
+        </li>
+        <li>
+          <a href="#" class="hoverNavigatie">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <?php
+      }else{
+    ?>
+
+        <a href="index.php"><img src="assets/images/logo.png" alt="" width="389" height="402" class="logo"></a>
+
+        <nav class="nav">
+          <ul class="navigatie">
+            <li class="navActiviteiten">
+              <a href="index.php?page=activiteiten" class=" hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?>">Activiteiten</a>
+              <ul class="subNavigatie">
+                <li class="subNavigatieA">
+                  <a href="index.php?page=activiteiten" class="a">Alle activiteiten</a>
+                </li>
+                <li class="subNavigatieA">
+                  <a href="#" class="a">Eigen activiteit</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="hoverNavigatie">Informatie</a>
+            </li>
+            <li>
+              <a href="#" class="hoverNavigatie">Scholen</a>
+            </li>
+            <li>
+              <a href="#" class="hoverNavigatie">Vorige edities</a>
+            </li>
+            <li>
+              <a href="#" class="hoverNavigatie">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+
+
+    <?php
+      }
+    ?>
 
     <div class="container">
       <?php if(!empty($_SESSION['info'])): ?><div class="alert alert-success"><?php echo $_SESSION['info'];?></div><?php endif; ?>

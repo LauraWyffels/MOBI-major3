@@ -11,6 +11,36 @@ class EventsController extends Controller {
     $this->eventDAO = new EventDAO();
   }
 
+  public function activiteiten() {
+    $conditions = array();
+    $this->set('title', 'activiteiten');
+    $this->set('currentPage', 'activiteiten');
+
+    $EventDAO = new EventDAO();
+    $events = $EventDAO->search($conditions);
+    $this->set('events',$events);
+  }
+
+  public function detail() {
+    $conditions = array();
+    $this->set('title', 'detail');
+    $this->set('currentPage', 'detail');
+
+    $EventDAO = new EventDAO();
+    $events = $EventDAO->search($conditions);
+
+    if(empty($_GET['id']) || !$event = $this->eventDAO->selectById($_GET['id'])) {
+      $_SESSION['error'] = 'Invalid event';
+      header('Location: index.php');
+    }
+
+    $this->set('event',$event);
+  }
+
+
+
+
+
   public function index() {
     $conditions = array();
 
