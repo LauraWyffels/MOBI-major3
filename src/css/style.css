@@ -195,6 +195,10 @@ a {
 
 /* Strapdag */
 
+.strapdag {
+  margin-top: 8rem;
+}
+
 .driehoek {
   background-image: url(../assets/images/driehoek.svg);
   background-repeat: no-repeat;
@@ -215,7 +219,10 @@ a {
 }
 
 .Strapdag_title {
+  position: absolute;
+  margin-top: -15rem;
   padding-bottom: 2rem;
+  margin-left: -10rem;
   display: flex;
   justify-content: center;
 }
@@ -252,7 +259,6 @@ a {
 }
 
 .imageAutovrijeZondag {
-  position: absolute;
   margin-top: -16rem;
 
 }
@@ -368,6 +374,22 @@ a {
   .pCarFreeDay {
     width: 30rem;
   }
+
+  .imageAutovrijeZondag {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+
+  .imageAutovrijeZondag {
+    position: absolute;
+    right: 0;
+  }
+
+  .AZ_title {
+    width: 50vw;
+  }
 }
 
 @media only screen and (min-width: 420px) {
@@ -385,10 +407,32 @@ a {
 
   .pCarFreeFestival {
     width: 26rem;
+    margin-bottom: 3rem;
   }
 
   .pHome {
     font-size: 1.6rem;
+  }
+
+  .wvdm {
+    padding-top: 10rem;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .week {
+    font-size: 5rem;
+  }
+
+  .mobiliteit {
+    font-size: 4rem;
+    padding: .1rem 1.5rem;
+    line-height: 6rem;
+  }
+
+  .datum {
+    font-size: 1.6rem;
+    padding-top: 2rem;
   }
 
 }
@@ -421,9 +465,136 @@ a {
     justify-content: space-around;
   }
 
+  .wvdm {
+    padding-top: 17rem;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .week {
+    font-size: 7rem;
+  }
+
+  .mobiliteit {
+    font-size: 6rem;
+    padding: .1rem 1.5rem;
+    line-height: 10rem;
+  }
+
+  .datum {
+    font-size: 1.8rem;
+    padding-top: 5rem;
+  }
+
+  /* AUTOVRIJE ZONDAG */
+
+  .autovrijeZondag {
+    width: 50vw;
+    padding-bottom: 0;
+  }
+
+  .pAutovrijeZondag {
+    width: 20vw;
+  }
+
+  .divAutovrijeZondag {
+    margin-top: 1rem;
+  }
+
+  .AZ_title {
+    width: 30vw;
+  }
+
+  .imageAutovrijeZondag {
+    position: relative;
+    padding-bottom: 0;
+    width: 50vw;
+
+  }
+
+  /* eigen activiteit */
+
+  .eigenActiviteit {
+    width: 50vw;
+  }
+
+  .divEigenActiviteit {
+    width: 40vw;
+    padding-bottom: 5rem;
+
+  }
+
+  .titleEigenActiviteit {
+    font-size: 2.6rem;
+  }
+
+  .pEigenActiviteit {
+    width: 40vw;
+  }
+
+  .submitInschrijven {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+  }
+
+  .autovrij_eigenActiviteit {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }
 
 @media only screen and (min-width: 840px) {
+
+  .strapdag {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+    margin-top: -10rem;
+
+  }
+
+  .driehoek {
+    width: 110rem;
+    height: 55rem;
+    right: 0;
+  }
+
+  .divStrapdag {
+    width: 30vw;
+    height: 22rem;
+    padding: 3rem;
+    padding-top: 15rem;
+    background-color: var(--lightyellow);
+  }
+
+  .tekstStrapdag {
+    margin-top: 14rem;
+  }
+
+  .Strapdag_title {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -13rem;
+  }
+
+  .kinderen {
+    font-size: 5rem;
+    padding: 2.5rem 1rem;
+    margin-bottom: 3.5rem;
+    margin-left: -5rem;
+    display: inline-block;
+  }
+
+  .imageStrapdag {
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: -40rem;
+  }
+
+  .pStrapdag {
+    background-color: none;
+  }
 
   .SectionCRF {
     margin-top: -5rem;
@@ -435,6 +606,32 @@ a {
 
   .navdesk {
     width: 43vw;
+  }
+
+  .wvdm {
+    padding-top: 17rem;
+    font-size: 4.5rem;
+    line-height: 4rem;
+  }
+
+  .week {
+    font-size: 8rem;
+  }
+
+  .mobiliteit {
+    font-size: 6rem;
+    padding: .1rem 1.5rem;
+    line-height: 10rem;
+  }
+
+  .datum {
+    font-size: 2rem;
+    padding-top: 5rem;
+  }
+
+  .headerimage {
+    width: 80vw;
+    margin: 0 auto;
   }
 
 }
@@ -454,80 +651,7 @@ a {
     z-index: 39;
   }
 
-  /* header home */
-
-  .header {
-    background-color: var(--lightyellow);
-    width: 100vw;
-  }
-
-  .backgroundheader {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-
-  }
-
-  .girl_bike {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 34.6rem;
-    z-index: 5;
-  }
-
-  .wvdm {
-    display: block;
-    justify-content: center;
-    width: 100vw;
-    position: absolute;
-    text-align: center;
-    z-index: 3;
-    padding-top: 28rem;
-    font-family: 'Avenir Next';
-    /* line-height: 6rem; */
-    font-size: 4.5rem;
-    color: var(--white);
-    line-height: 4rem;
-  }
-
-  .week {
-    color: var(--blue);
-    font-size: 8rem;
-  }
-
-  .mobiliteit {
-    font-size: 6rem;
-    background-color: var(--blue);
-    /* width: 25rem; */
-    color: var(--white);
-    padding: .1rem 1.5rem;
-    line-height: 10rem;
-  }
-
-  .datum {
-    font-size: 2rem;
-    color: var(--white);
-    padding-top: 5rem;
-  }
-
   /* header activiteiten */
-
-  .headerActiviteiten {
-    background-color: var(--white);
-    font-family: 'Avenir Next';
-    font-weight: 500;
-
-  }
-
-  .girl_bike2 {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 9.9rem;
-
-  }
 
   .weekvdmobiliteit {
     font-size: 2rem;
@@ -571,6 +695,10 @@ a {
     margin-bottom: 3rem;
   }
 
+  /* .CFF_image {
+    position: relative;
+  } */
+
   /* CAR FREE DAY */
 
   .carFreeDay {
@@ -593,54 +721,12 @@ a {
   /* STRAPDAG */
 
   .strapdag {
-    justify-content: flex-end;
-    margin-bottom: 5rem;
     margin-top: -15rem;
-  }
-
-  .driehoek {
-    background-image: url(../assets/images/driehoek.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    width: 110rem;
-    height: 55rem;
-  }
-
-  .divStrapdag {
-    background-color: var(--lightyellow);
-    width: 30vw;
-    height: 22rem;
-    padding: 3rem;
-  }
-
-  .tekstStrapdag {
-    position: absolute;
-    margin-top: 14rem;
-  }
-
-  .Strapdag_title {
-    font-size: 4rem;
-    padding-bottom: 2rem;
-    font-family: 'Avenir Next';
-    font-weight: 500;
   }
 
   .kinderen {
     font-size: 6rem;
-    background: var(--blue);
-    padding: 2.5rem 1rem;
-    margin-bottom: 3.5rem;
     margin-left: -20rem;
-    display: inline-block;
-    font-family: 'Avenir Next';
-    font-weight: 500;
-  }
-
-  .imageStrapdag {
-    position: absolute;
-    margin-top: -5rem;
-    margin-left: -40rem;
-
   }
 
   /* AUTOVRIJE ZONDAG */

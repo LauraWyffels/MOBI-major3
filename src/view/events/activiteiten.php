@@ -15,12 +15,13 @@
   </header>
 
   <section class="search">
-    <form class="" action="index.php?page=activiteiten" method="post">
+    <form class="" action="index.php?page=activiteiten" method="get">
       <fieldset class="fieldsetSearch">
         <div class="zoekbalk">
           <img src="assets/images/search.svg" alt="" width="40" height="40" class="searchimage">
           <input type="search" name="query" class="searchinput" placeholder="Zoek een event..." id="search">
         </div>
+        <input type="hidden" name="page" value="activiteiten">
         <input type="submit" name="action" value="Zoek" class="submitSearch">
       </fieldset>
     </form>
@@ -28,7 +29,7 @@
 
   <section  class="filter">
     <h2 class="hide">Filters</h2>
-    <form action="index.php?page=activiteiten" method="post">
+    <form action="index.php?page=activiteiten" method="get">
       <fieldset class="fieldsetFilter">
 
       <div class="divFilter">

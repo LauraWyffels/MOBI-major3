@@ -1,21 +1,4 @@
-<!-- <header class="header">
-  <div class="wvdm">
-    <p>
-      <span class="week">Week</span>
-     <br><span class="vande">van</span>
-     <br><span class="de">de</span>
-     <br><span class="mobiliteit">mobiliteit</span>
-     <br><span class="datum">16 - 22 september</span>
-   </p>
-  </div>
-  <div  class="backgroundheader">
-    <img src="assets/images/backgroundheader.png" alt="weekVanDeMobiliteit" width="643" height="748">
-  </div>
-  <div class="girl_bike">
-    <img src="assets/images/bike_girl_left.png" alt="weekVanDeMobiliteit" width="415" height="402">
-    <img src="assets/images/bike_girl_right.png" alt="weekVanDeMobiliteit" width="415" height="402">
-  </div>
-</header> -->
+
 <main>
   <section class="carFreeFestival">
     <div class="tekstCFF">
@@ -33,7 +16,7 @@
       assets/images/carFreeFestival_459.png 459w,
       assets/images/carFreeFestival_495.png 495w,
       assets/images/carFreeFestival_498.png 498w"
-      src="carFreeFestival_498.png"
+
       alt="trein" class="CFF_image">
     <!-- <img src="assets/images/carFreeFestival.png" alt="trein" width="442" height="665"> -->
   </section>
@@ -61,7 +44,7 @@
     </div>
   </section>
 
-  <section class="flex strapdag">
+  <!-- <section class="flex strapdag">
     <h2 class="Strapdag_title h2Home">STRAPDAG</h2>
     <img
     sizes="(max-width: 320px) 70vw, 200px"
@@ -76,13 +59,36 @@
     assets/images/strapdag_469.png 469w"
     src="assets/images/strapdag_469.png"
     alt="" class="imageStrapdag">
-    <!-- <img src="assets/images/strapdag.png" alt="kid" width="548" height="491" class="imageStrapdag"> -->
     <div class="tekstStrapdag">
       <p class="kinderen">Voor kinderen</p>
+      <h2 class="Strapdag_title h2Home">STRAPDAG</h2>
       <p class="pStrapdag pHome">De dagelijkse functionele verplaatsing naar school te voet of met de fiets doen, heeft een impact op vlak van milieu, mobiliteit en het is gezond voor je kind!</p>
     </div>
     <div class="driehoek"></div>
-  </section>
+  </section> -->
+  <section class="flex strapdag">
+    <img
+    sizes="(max-width: 320px) 70vw, 200px"
+    srcset="
+    assets/images/strapdag_200.png 200w,
+    assets/images/strapdag_257.png 257w,
+    assets/images/strapdag_304.png 304w,
+    assets/images/strapdag_351.png 351w,
+    assets/images/strapdag_392.png 392w,
+    assets/images/strapdag_432.png 432w,
+    assets/images/strapdag_468.png 468w,
+    assets/images/strapdag_469.png 469w"
+    src="assets/images/strapdag_469.png"
+    alt="" class="imageStrapdag">
+  <div class="tekstStrapdag">
+    <p class="kinderen">Voor kinderen</p>
+    <div class="divStrapdag">
+      <h2 class="Strapdag_title h2Home">STRAPDAG</h2>
+      <p class="pStrapdag pHome">De dagelijkse functionele verplaatsing naar school te voet of met de fiets doen, heeft een impact op vlak van milieu, mobiliteit en het is gezond voor je kind!</p>
+    </div>
+  </div>
+  <div class="driehoek"></div>
+</section>
 
 <section class="autovrij_eigenActiviteit">
   <section class="autovrijeZondag">
@@ -91,7 +97,7 @@
       <p class="pAutovrijeZondag pHome">Heel wat steden doen op zondag mee aan deze actie. Het is de bedoeling dat je in deze steden de auto voor een dag thuislaat.</p>
     </div>
     <img
-      sizes="(max-width: 708px) 100vw, 708px"
+      sizes="(max-width: 320px) 100vw, (min-width: 390px) 70vw, (min-width: 700px) 50vw"
       srcset="
       assets/images/autovrije_zondag_200.png 200w,
       assets/images/autovrije_zondag_292.png 292w,
@@ -105,7 +111,6 @@
       assets/images/autovrije_zondag_708.png 708w"
       src="assets/images/autovrije_zondag_708.png"
       alt="" class="imageAutovrijeZondag">
-    <!-- <img src="assets/images/autovrije_zondag.png" alt="fietser" width="635" height="672" class="imageAutovrijeZondag"> -->
   </section>
 
   <section class="eigenActiviteit">

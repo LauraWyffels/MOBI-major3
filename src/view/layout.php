@@ -16,7 +16,7 @@
       (function(d) {
         var wf = d.createElement('script'),
           s = d.scripts[0];
-        wf.src = 'http://localhost:8080/js/webfont.js';
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
         wf.async = true;
         s.parentNode.insertBefore(wf, s);
       })(document);
@@ -54,54 +54,6 @@
         src="assets/images/header_1067.png"
         alt="" class="headerimage">
 
-      <!-- <div  class="backgroundheader">
-        <img
-          sizes="(max-width: 578px) 100vw, 578px"
-          srcset="
-          assets/images/backgroundheader_200.png 200w,
-          assets/images/backgroundheader_270.png 270w,
-          assets/images/backgroundheader_328.png 328w,
-          assets/images/backgroundheader_379.png 379w,
-          assets/images/backgroundheader_426.png 426w,
-          assets/images/backgroundheader_470.png 470w,
-          assets/images/backgroundheader_511.png 511w,
-          assets/images/backgroundheader_552.png 552w,
-          assets/images/backgroundheader_567.png 567w,
-          assets/images/backgroundheader_578.png 578w"
-          src="backgroundheader_578.png"
-          alt="weekVanDeMobiliteit">
-      </div>
-      <div class="girl_bike">
-        <img
-          sizes="(max-width: 415px) 100vw, 415px"
-          srcset="
-          assets/images/bike_girl_left_200.png 200w,
-          assets/images/bike_girl_left_238.png 238w,
-          assets/images/bike_girl_left_271.png 271w,
-          assets/images/bike_girl_left_303.png 303w,
-          assets/images/bike_girl_left_331.png 331w,
-          assets/images/bike_girl_left_362.png 362w,
-          assets/images/bike_girl_left_389.png 389w,
-          assets/images/bike_girl_left_414.png 414w,
-          assets/images/bike_girl_left_415.png 415w"
-          src="assets/images/bike_girl_left_415.png"
-          alt="weekVanDeMobiliteit">
-          <img
-            sizes="(max-width: 415px) 100vw, 415px"
-            srcset="
-            assets/images/bike_girl_right_200.png 200w,
-            assets/images/bike_girl_right_238.png 238w,
-            assets/images/bike_girl_right_272.png 271w,
-            assets/images/bike_girl_right_303.png 303w,
-            assets/images/bike_girl_right_332.png 331w,
-            assets/images/bike_girl_right_364.png 362w,
-            assets/images/bike_girl_right_390.png 389w,
-            assets/images/bike_girl_right_408.png 414w,
-            assets/images/bike_girl_right_415.png 415w"
-            src="assets/images/bike_girl_right_415.png"
-            alt="weekVanDeMobiliteit">
-
-      </div> -->
     </header>
 
     <nav>
