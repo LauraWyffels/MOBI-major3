@@ -9,6 +9,13 @@ class EventDAO extends DAO {
   }
 
   public function selectById($id) {
+    // $result = $this->search(array(array('field' => 'id', 'comparator' => '=', 'value' => $id)));
+    // if(!empty($result)) {
+    //   return
+    //   $return[0];
+    // } return false;
+
+
     $sql = "SELECT * FROM `ma3_auto_events` WHERE `id` = :id";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':id', $id);
@@ -47,6 +54,9 @@ class EventDAO extends DAO {
       } else if($columnName == 'tag') {
         $columnName = 'ma3_auto_tags.tag';
       }
+      //  else if($columnName == 'id') {
+      //   $columnName = 'ma3_auto_events.id';
+      // }
       //handle functions
       if(!empty($condition['function'])) {
         $function = DAO::getSanitizedFunction($condition['function']);
@@ -119,7 +129,7 @@ class EventDAO extends DAO {
     return $organisersByEventId;
   }
 
-  private function _getTagsForEventIds($eventIds) {
+  public function _getTagsForEventIds($eventIds) {
     $tagsByEventId = array();
     $eventIdsImploded = implode(', ', $eventIds);
     $sql = "SELECT

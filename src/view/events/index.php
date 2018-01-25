@@ -18,5 +18,5 @@
         <dt>tags</dt><dd><ul><?php foreach($event['tags'] as $tag): ?><li><?php echo $tag['tag'];?></li><?php endforeach;?></ul></dd>
       </dl>
     </article>
-  <? endforeach;?>
+  <?php endforeach;?>
 </section>

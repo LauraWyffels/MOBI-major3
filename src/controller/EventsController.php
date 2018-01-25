@@ -48,19 +48,22 @@ class EventsController extends Controller {
   }
 
   public function detail() {
+    // $events = $this->eventDAO->selectById($_GET['id']);
+    // $this->set('events', $events);
+
     $conditions = array();
     $this->set('title', 'detail');
     $this->set('currentPage', 'detail');
-
-    $EventDAO = new EventDAO();
-    $events = $EventDAO->search($conditions);
 
     if(empty($_GET['id']) || !$event = $this->eventDAO->selectById($_GET['id'])) {
       $_SESSION['error'] = 'Invalid event';
       header('Location: index.php');
     }
 
+    $events = $this->eventDAO->search($conditions);
     $this->set('event',$event);
+
+
   }
 
 

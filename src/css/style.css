@@ -21,11 +21,22 @@ body {
   display: none;
 }
 
-.nav {
-  position: fixed;
-  z-index: 20;
+.header {
+  background-color: var(--lightyellow);
   width: 100vw;
+}
+
+.headerimage {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.nav {
+  z-index: 20;
   margin: 0 auto;
+  background-color: var(--white);
+
 }
 
 li {
@@ -37,37 +48,75 @@ a {
   color: var(--white);
 }
 
+/* .flex {
+  display: flex;
+
+} */
+
 .hoverNavigatie:hover {
   border-bottom: var(--yellow) .3rem solid;
+}
+
+.wvdm {
+  display: block;
+  justify-content: center;
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  padding-top: 5rem;
+  font-family: 'Avenir Next';
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 2.5rem;
+}
+
+.week {
+  color: var(--blue);
+  font-size: 4.5rem;
+}
+
+.mobiliteit {
+  font-size: 3.5rem;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: .1rem 1rem;
+  line-height: 6rem;
+}
+
+.datum {
+  font-size: 1.5rem;
 }
 
 .navigatie {
   display: flex;
   justify-content: space-around;
-  width: 95rem;
   margin: 0 auto;
   background-color: var(--blue);
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Avenir Next';
 }
 
 .navActiviteiten:hover .subNavigatie {
   display: block;
 }
 
+.subNavigatieMeer {
+  background-color: var(--blue);
+  padding: .5rem;
+  margin-left: -2rem;
+}
+
 .subNavigatie {
   display: none;
   position: absolute;
-  width: 20rem;
-  margin-left: -5.8rem;
   padding-top: 1rem;
-
+  margin-left: -2.5rem;
 }
 
 .subNavigatieA {
   background-color: var(--blue);
-  display: flex;
-  justify-content: center;
   padding: .5rem;
 }
 
@@ -79,582 +128,909 @@ a {
   background-color: var(--yellow);
 }
 
-.logo {
-  position: absolute;
-  width: 15rem;
-  height: 15.5rem;
-
+.navdesk {
+  display: none;
 }
 
-/* header home */
+/* home */
 
-.header {
-  background-color: var(--lightyellow);
+.h2Home {
+  font-family: 'Avenir Next';
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin-top: 3.5rem;
+    line-height: 4rem;
 }
 
-.backgroundheader {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-
-}
-
-.girl_bike {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 34.6rem;
-  z-index: 5;
-}
-
-.wvdm {
-  display: block;
-  justify-content: center;
-  width: 100vw;
-  position: absolute;
-  text-align: center;
-  z-index: 3;
-  padding-top: 28rem;
-  /* line-height: 6rem; */
-  font-size: 4.5rem;
-  color: var(--white);
-  line-height: 4rem;
-}
-
-.week {
-  color: var(--blue);
-  font-size: 8rem;
-}
-
-.mobiliteit {
-  font-size: 6rem;
-  background-color: var(--blue);
-  /* width: 25rem; */
-  color: var(--white);
-  padding: .1rem 1.5rem;
-  line-height: 10rem;
-}
-
-.datum {
-  font-size: 2rem;
-  color: var(--white);
-  padding-top: 5rem;
-}
-
-/* header activiteiten */
-
-.headerActiviteiten {
-  background-color: var(--white);
-
-  z-index: -1;
-}
-
-.girl_bike2 {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 9.9rem;
-  z-index: 5;
-}
-
-.weekvdmobiliteit {
-  font-size: 2rem;
-  background-color: var(--blue);
-  padding: .1rem 6rem;
-  display: inline-block;
-}
-
-.titleActiviteit {
-  display: block;
-  justify-content: center;
-  width: 100vw;
-  position: absolute;
-  text-align: center;
-  z-index: 3;
-  padding-top: 10rem;
-  font-size: 7rem;
-  color: var(--white);
-  line-height: 4rem;
-}
-
-/* index */
-
-.flex {
-  display: flex;
-
+.pHome {
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 /* CAR FREE FESTIVAL */
 
-.CFF_title {
-  font-size: 4rem;
-  margin-bottom: 3.5rem;
-
-}
-
 .tekstCFF {
-  margin-right: -25rem;
+  margin-left: 3rem;
 }
 
 .carFreeFestival {
+  display: flex;
   justify-content: flex-end;
-  /* margin-right: 5rem; */
-  margin-top: 10rem;
 
 }
 
-.pCarFreeFestival {
-  width: 30rem;
-  margin-bottom: 3rem;
+.CFF_image {
+  position: absolute;
+  margin-top: 12rem;
+}
 
+.pCarFreeFestival {
+  width: 50vw;
+  margin-bottom: 3rem;
 }
 
 .ctahome {
   background-color: var(--yellow);
   padding: 1rem;
   font-size: 2rem;
-
 }
 
 .ctahome:hover {
   background-color: var(--blue);
   padding: 1rem;
-
 }
 
-/* CAR FREE DAY */
+/* Car free day */
 
 .carFreeDay {
-  margin-right: 5rem;
-  margin-top: -45rem;
+  margin-top: 1.5rem;
+  display: flex;
 }
 
 .CFD_title {
-  font-size: 4rem;
-  margin-top: 30rem;
-  margin-left: -10rem;
-  margin-bottom: 3.5rem;
+  margin-left: 3rem;
 }
 
 .pCarFreeDay {
-  width: 30rem;
-
-  margin-left: -5rem;
+  margin-right: 2rem;
+  margin-left: -2rem;
 }
 
-/* STRAPDAG */
-
-.strapdag {
-  justify-content: flex-end;
-  margin-bottom: 5rem;
-  margin-top: -15rem;
-}
+/* Strapdag */
 
 .driehoek {
   background-image: url(../assets/images/driehoek.svg);
   background-repeat: no-repeat;
   background-position: right;
-  width: 110rem;
-  height: 55rem;
+  height: 27rem;
 }
 
-.divStrapdag {
+.pStrapdag {
   background-color: var(--lightyellow);
-  width: 30vw;
-  height: 22rem;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .tekstStrapdag {
   position: absolute;
-  margin-top: 14rem;
-
+  align-items: flex-end;
+  width: 50vw;
+  right: 0;
 }
 
 .Strapdag_title {
-  font-size: 4rem;
   padding-bottom: 2rem;
-
+  display: flex;
+  justify-content: center;
 }
 
 .kinderen {
-  font-size: 6rem;
+  font-size: 2rem;
   background: var(--blue);
-  padding: 2.5rem 1rem;
   margin-bottom: 3.5rem;
-  margin-left: -20rem;
-  display: inline-block;
-
+  padding: .5rem 1rem;
+  text-align: center;
+  font-family: 'Avenir Next';
+  font-weight: 500;
 }
 
 .imageStrapdag {
   position: absolute;
-  margin-top: -5rem;
-  margin-left: -40rem;
-
+  z-index: 3;
+  padding-top: .8rem;
 }
 
 /* AUTOVRIJE ZONDAG */
 
 .autovrijeZondag {
-  justify-content: flex-end;
+  padding-bottom: 17.8rem;
 }
 
 .AZ_title {
-  font-size: 4rem;
-  width: 10vw;
-  line-height: 4rem;
-  padding-bottom: 3rem;
+  padding-left: 3rem;
 }
 
 .pAutovrijeZondag {
-  width: 25rem;
+  width: 40vw;
+  margin-left: 2rem;
 }
 
-.divAutovrijeZondag {
-  margin-top: 8rem;
+.imageAutovrijeZondag {
   position: absolute;
-  margin-left: -35rem;
+  margin-top: -16rem;
 
 }
-
-/* .imageAutovrijeZondag {
-  position: absolute;
-  justify-content: flex-end;
-} */
 
 /* eigen activiteit */
 
 .eigenActiviteit {
   background-color: var(--blue);
-  width: 50rem;
-  height: 50rem;
+  width: 100vw;
+  height: 35rem;
+  background-image: url(../assets/images/stippen.png);
+  padding-top: 3rem;
+}
 
+.divEigenActiviteit {
+  margin: 0 auto;
+  background-color: var(--blue);
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
 }
 
 .titleEigenActiviteit {
-  background-color: var(--yellow);
-  font-size: 3.6rem;
-  margin-top: 3.2rem;
+  font-size: 2.4rem;
   text-align: center;
+  font-family: 'Avenir Next';
+  font-weight: 500;
   padding: 1rem;
+  background-color: var(--yellow);
 }
 
 .pEigenActiviteit {
   margin: 0 auto;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   text-align: center;
-  margin-top: 5rem;
-  padding-top: 3rem;
-  width: 38rem;
-
+  padding: 1rem;
 }
 
 .submitInschrijven {
-  font-size: 3.6rem;
+  font-size: 1.8rem;
   background-color: var(--yellow);
   padding: 1rem 3rem;
-  width: 27rem;
   margin: 0 auto;
-  margin-top: 8rem;
-
-}
-
-.autovrij_eigenActiviteit {
-  justify-content: center;
-  align-items: flex-end;
-}
-
-/* activiteiten overzicht */
-
-.search {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  margin-top: -25rem;
-}
-
-.zoekbalk {
-  background-color: var(--yellow);
-  width: 50rem;
-  height: 7rem;
-  display: flex;
-  justify-content: space-between;
-
-  z-index: 5;
-}
-
-.searchimage {
-  width: 6rem;
-  height: 7rem;
-  padding-left: 1rem;
-}
-
-.searchinput {
-  margin: .5rem;
+  margin-top: 1rem;
   border: none;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.submitInschrijven:hover {
+  background-color: var(--lightyellow);
+  border: none;
+}
+
+.submitInschrijven:focus {
+  background-color: var(--lightyellow);
   outline: none;
-  height: 6rem;
-  font-size: 2rem;
-  width: 40rem;
-  padding-left: 1rem;
-  margin-right: 3.5rem;
-  margin-left: 2rem;
-  background-color: var(--yellow);
-  border-bottom: var(--white) .3rem solid;
-  color: var(--white);
-}
-
-.searchinput::placeholder {
-  color: var(--white);
-}
-
-.submitSearch {
-  background-color: var(--white);
-  color: var(--yellow);
-  font-size: 2.4rem;
-  z-index: 5;
-  width: 10rem;
-  margin: 0 auto;
-  margin-top: 3rem;
-  border: var(--white) .5rem solid;
-
-}
-
-.submitSearch:hover {
-  border: var(--yellow) .5rem solid;
-}
-
-.fieldsetSearch {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.fieldsetFilter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.filter {
-  background: var(--lightyellow);
-  width: 100vw;
-  height: 35rem;
-  display: flex;
-  justify-content: space-around;
-  color: var(--grey);
-}
-
-.filterTitle {
-  font-size: 2.4rem;
-  padding-top: 5rem;
-  color: #434242;
-}
-
-.filterKinderen {
-  background-color: var(--lightblue);
   border: none;
-  font-size: 2rem;
-  padding: 1rem;
-  width: 14rem;
-  color: var(--grey);
 }
 
-.filterKinderen:hover {
-  background-color: var(--grey);
-  color: var(--lightblue);
-}
+/* sponsors */
 
-.filterKinderen:focus {
-  background-color: var(--grey);
-  color: var(--lightblue);
-  border: none;
-  outline: none;
-}
-
-.column {
-  display: flex;
-  flex-flow: column;
-  margin-right: 5rem;
-}
-
-.inputplaats {
-  background-color: var(--lightblue);
+.titleSponsors {
   font-size: 1.8rem;
-  border: none;
-  outline: none;
-}
-
-.inputPostcode {
-  text-align: center;
-  width: 8rem;
-  height: 4rem;
-}
-
-.inputplaatsStad {
-  width: 20rem;
-  height: 4rem;
-  padding-left: 1rem;
-
-}
-
-.filterDays {
   display: flex;
-  flex-wrap: wrap;
-  width: 45rem;
-  text-align: center;
-
-}
-
-.filterDay {
-  color: #767575;
-  background-color: var(--lightblue);
-  width: 7rem;
-  font-size: 2rem;
-  margin: 2rem 2rem 2rem .1rem;
-}
-
-.filterDay:hover {
-  color: var(--lightblue);
-  background-color: var(--grey);
-}
-
-.filter:focus {
-  background-color: var(--grey);
-  color: var(--lightblue);
-  border: none;
-  outline: none;
-}
-
-.submitFilterForm {
-  background-color: var(--white);
-  color: var(--yellow);
-  font-size: 2.4rem;
-
-  margin-left: 35rem;
-  border: var(--white) .5rem solid;
-}
-
-.submitFilterForm:hover {
-  border: var(--yellow) .5rem solid;
-}
-
-.submitFilterForm:focus {
-  border: var(--yellow) .5rem solid;
-  outline: none;
-}
-
-.plaats {
-  display: flex;
-  justify-content: flex-start;
-  font-size: 1.8rem;
-  color: #434242;
-}
-
-.events {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 5rem;
-
-}
-
-.eventArticle {
-  margin-bottom: 10rem;
-}
-
-.eventsImage {
-  width: 50rem;
-  height: 36rem;
-  object-fit: cover;
-  z-index: -4;
-
-}
-
-.eventTitle {
-  font-size: 3rem;
-  background-color: var(--pink);
+  background-color: var(--blue);
   color: var(--white);
-  width: 50rem;
-  height: 8.5rem;
-  text-align: center;
+}
+
+.sponsors {
+  margin: 2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 5rem;
-}
-
-.eventTimeTitle {
-  font: 1.8rem;
-  color: var(--white);
-  background-color: var(--yellow);
-  display: inline-block;
-  padding: .15rem 1.5rem;
-  padding-right: 5rem;
-}
-
-.eventsDriehoek {
-  position: absolute;
-  width: 50rem;
-  height: 36rem;
-  background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
-
-}
-
-.eventTimeDiv {
-  position: absolute;
-  margin-top: -15rem;
-
-}
-
-.eventTime {
-  margin-left: 3rem;
-}
-
-.eventInfo {
-  display: flex;
-  justify-content: space-between;
-  font: 2.4rem;
-}
-
-.eventsAdres {
-  font-weight: bold;
-}
-
-.eventsDatum {
-  text-align: right;
-}
-
-/* detail */
-
-.detailTitle {
-  width: 55rem;
-  margin: 0 auto;
-  line-height: 7rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* footer */
 
-.titleSponsors {
-  font-size: 6rem;
+.footer {
+  background-color: var(--lightblue);
+  color: var(--blue);
+  text-align: center;
+  height: 10rem;
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
 }
 
-.sponsors {
-  margin: 5rem 20rem;
-  display: flex;
-  justify-content: space-around;
-}
+@media only screen and (min-width: 1247px) {
 
-.blauwelijnSponsors {
-  width: 100vw;
-  height: 4rem;
-  background-color: var(--blue);
-  margin-top: -1rem;
+  .navigatie {
+    width: 65vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+
+  .navmobile {
+    display: none;
+  }
+
+  .navdesk {
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo {
+    position: fixed;
+    z-index: 39;
+  }
+
+  /* header home */
+
+  .header {
+    background-color: var(--lightyellow);
+    width: 100vw;
+  }
+
+  .backgroundheader {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+  }
+
+  .girl_bike {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 34.6rem;
+    z-index: 5;
+  }
+
+  .wvdm {
+    display: block;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    padding-top: 28rem;
+    font-family: 'Avenir Next';
+    /* line-height: 6rem; */
+    font-size: 4.5rem;
+    color: var(--white);
+    line-height: 4rem;
+  }
+
+  .week {
+    color: var(--blue);
+    font-size: 8rem;
+  }
+
+  .mobiliteit {
+    font-size: 6rem;
+    background-color: var(--blue);
+    /* width: 25rem; */
+    color: var(--white);
+    padding: .1rem 1.5rem;
+    line-height: 10rem;
+  }
+
+  .datum {
+    font-size: 2rem;
+    color: var(--white);
+    padding-top: 5rem;
+  }
+
+  /* header activiteiten */
+
+  .headerActiviteiten {
+    background-color: var(--white);
+    font-family: 'Avenir Next';
+    font-weight: 500;
+
+  }
+
+  .girl_bike2 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 9.9rem;
+
+  }
+
+  .weekvdmobiliteit {
+    font-size: 2rem;
+    background-color: var(--blue);
+    padding: .1rem 6rem;
+    display: inline-block;
+    font-family: 'Avenir Next';
+  }
+
+  .titleActiviteit {
+    display: block;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    padding-top: 10rem;
+    font-size: 7rem;
+    color: var(--white);
+    line-height: 4rem;
+  }
+
+  /* CAR FREE FESTIVAL */
+
+  .CFF_title {
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .tekstCFF {
+    margin-right: -25rem;
+  }
+
+  .carFreeFestival {
+    justify-content: flex-end;
+    margin-top: 10rem;
+  }
+
+  .pCarFreeFestival {
+    width: 30rem;
+    margin-bottom: 3rem;
+  }
+
+  /* CAR FREE DAY */
+
+  .carFreeDay {
+    margin-right: 5rem;
+    margin-top: -45rem;
+  }
+
+  .CFD_title {
+    font-size: 4rem;
+    margin-top: 30rem;
+    margin-left: -10rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .pCarFreeDay {
+    width: 30rem;
+    margin-left: -5rem;
+  }
+
+  /* STRAPDAG */
+
+  .strapdag {
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+    margin-top: -15rem;
+  }
+
+  .driehoek {
+    background-image: url(../assets/images/driehoek.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 110rem;
+    height: 55rem;
+  }
+
+  .divStrapdag {
+    background-color: var(--lightyellow);
+    width: 30vw;
+    height: 22rem;
+    padding: 3rem;
+  }
+
+  .tekstStrapdag {
+    position: absolute;
+    margin-top: 14rem;
+  }
+
+  .Strapdag_title {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    font-family: 'Avenir Next';
+    font-weight: 500;
+  }
+
+  .kinderen {
+    font-size: 6rem;
+    background: var(--blue);
+    padding: 2.5rem 1rem;
+    margin-bottom: 3.5rem;
+    margin-left: -20rem;
+    display: inline-block;
+    font-family: 'Avenir Next';
+    font-weight: 500;
+  }
+
+  .imageStrapdag {
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: -40rem;
+
+  }
+
+  /* AUTOVRIJE ZONDAG */
+
+  .autovrijeZondag {
+    justify-content: flex-end;
+  }
+
+  .AZ_title {
+    font-size: 4rem;
+    width: 10vw;
+    line-height: 4rem;
+    padding-bottom: 3rem;
+    font-family: 'Avenir Next';
+    font-weight: 500;
+  }
+
+  .pAutovrijeZondag {
+    width: 25rem;
+  }
+
+  .divAutovrijeZondag {
+    margin-top: 8rem;
+    position: absolute;
+    margin-left: -35rem;
+  }
+
+  /* eigen activiteit */
+
+  .eigenActiviteit {
+    background-color: var(--blue);
+    width: 50rem;
+    height: 50rem;
+    background-image: url(../assets/images/stippen.png);
+
+  }
+
+  .divEigenActiviteit {
+    margin: 0 auto;
+    background-color: var(--blue);
+    width: 45rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+
+  }
+
+  .titleEigenActiviteit {
+    background-color: var(--yellow);
+    font-size: 3.6rem;
+    margin-top: 3.2rem;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Avenir Next';
+    font-weight: 500;
+  }
+
+  .pEigenActiviteit {
+    margin: 0 auto;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 5rem;
+    padding-top: 3rem;
+    width: 38rem;
+
+  }
+
+  .submitInschrijven {
+    font-size: 3.6rem;
+    background-color: var(--yellow);
+    padding: 1rem 3rem;
+    width: 27rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+    border: none;
+    font-family: 'Avenir Next';
+    font-weight: 500;
+  }
+
+  .submitInschrijven:hover {
+    background-color: var(--lightyellow);
+    border: none;
+
+  }
+
+  .submitInschrijven:focus {
+    background-color: var(--lightyellow);
+    outline: none;
+    border: none;
+
+  }
+
+  .autovrij_eigenActiviteit {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  /* sponsors */
+
+  .titleSponsors {
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+
+  .sponsors {
+    margin: 5rem 20rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .blauwelijnSponsors {
+    width: 100vw;
+    height: 4rem;
+    background-color: var(--blue);
+    margin-top: -1rem;
+  }
+
+  /* activiteiten overzicht */
+
+  .search {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -25rem;
+  }
+
+  .zoekbalk {
+    background-color: var(--yellow);
+    width: 50rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 5;
+  }
+
+  .searchimage {
+    width: 6rem;
+    height: 7rem;
+    padding-left: 1rem;
+  }
+
+  .searchinput {
+    margin: .5rem;
+    border: none;
+    outline: none;
+    height: 6rem;
+    font-size: 2rem;
+    width: 40rem;
+    padding-left: 1rem;
+    margin-right: 3.5rem;
+    margin-left: 2rem;
+    background-color: var(--yellow);
+    border-bottom: var(--white) .3rem solid;
+    color: var(--white);
+  }
+
+  .searchinput::placeholder {
+    color: var(--white);
+  }
+
+  .submitSearch {
+    background-color: var(--white);
+    color: var(--yellow);
+    font-size: 2.4rem;
+    z-index: 5;
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: var(--white) .5rem solid;
+
+  }
+
+  .submitSearch:hover {
+    border: var(--yellow) .5rem solid;
+  }
+
+  .fieldsetSearch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divFilter {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .filter {
+    background: var(--lightyellow);
+    width: 100vw;
+    height: 35rem;
+
+    color: var(--grey);
+  }
+
+  .filterTitle {
+    font-size: 2.4rem;
+    padding-top: 5rem;
+    color: #434242;
+  }
+
+  .filterKinderen {
+    background-color: var(--lightblue);
+    border: none;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 14rem;
+    color: var(--grey);
+  }
+
+  .filterKinderen:hover {
+    background-color: var(--grey);
+    color: var(--lightblue);
+  }
+
+  .filterKinderen:focus {
+    background-color: var(--grey);
+    color: var(--lightblue);
+    border: none;
+    outline: none;
+  }
+
+  .column {
+    display: flex;
+    flex-flow: column;
+    margin-right: 5rem;
+  }
+
+  .inputplaats {
+    background-color: var(--lightblue);
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+  }
+
+  .inputPostcode {
+    text-align: center;
+    width: 8rem;
+    height: 4rem;
+  }
+
+  .inputplaatsStad {
+    width: 20rem;
+    height: 4rem;
+    padding-left: 1rem;
+
+  }
+
+  .filterDays {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45rem;
+    text-align: center;
+
+  }
+
+  .filterDay {
+    color: #767575;
+    background-color: var(--lightblue);
+    width: 7rem;
+    font-size: 2rem;
+    margin: 2rem 2rem 2rem .1rem;
+  }
+
+  .filterDay:hover {
+    color: var(--lightblue);
+    background-color: var(--grey);
+  }
+
+  .filter:focus {
+    background-color: var(--grey);
+    color: var(--lightblue);
+    border: none;
+    outline: none;
+  }
+
+  .submitFilterForm {
+    background-color: var(--white);
+    color: var(--yellow);
+    font-size: 2.4rem;
+
+    margin-left: 35rem;
+    border: var(--white) .5rem solid;
+  }
+
+  .submitFilterForm:hover {
+    border: var(--yellow) .5rem solid;
+  }
+
+  .submitFilterForm:focus {
+    border: var(--yellow) .5rem solid;
+    outline: none;
+  }
+
+  .plaats {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+    color: #434242;
+  }
+
+  .events {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    font-family: 'Avenir Next';
+
+  }
+
+  .eventArticle {
+    margin-bottom: 10rem;
+
+  }
+
+  .eventsImage {
+    width: 50rem;
+    height: 36rem;
+    object-fit: cover;
+    z-index: -4;
+
+  }
+
+  .eventTitle {
+    font-size: 3rem;
+    background-color: var(--pink);
+    color: var(--white);
+    width: 50rem;
+    height: 8.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 5rem;
+    line-height: 4rem;
+  }
+
+  .eventTimeTitle {
+    font: 1.8rem;
+    color: var(--white);
+    background-color: var(--yellow);
+    display: inline-block;
+    padding: .15rem 1.5rem;
+    padding-right: 5rem;
+  }
+
+  .eventsDriehoek {
+    position: absolute;
+    width: 50rem;
+    height: 36rem;
+    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
+
+  }
+
+  .eventTimeDiv {
+    position: absolute;
+    margin-top: -15rem;
+
+  }
+
+  .eventTime {
+    margin-left: 3rem;
+  }
+
+  .eventInfo {
+    display: flex;
+    justify-content: space-between;
+    font: 2.4rem;
+  }
+
+  .eventsAdres {
+    font-weight: bold;
+  }
+
+  .eventsDatum {
+    text-align: right;
+  }
+
+  /* headerDetail */
+
+  .headerDetail {
+    background-color: var(--lightyellow);
+  }
+
+  /* detail */
+
+  .detailTitle {
+    width: 55rem;
+    margin: 0 auto;
+    line-height: 7rem;
+  }
+
+  .detail {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 5rem 1fr;
+    grid-template-areas: 'tags tags tags' 'section1 . section2';
+    margin-top: 10rem;
+  }
+
+  .section1 {
+    grid-area: section1;
+  }
+
+  .section2 {
+    grid-area: section2;
+  }
+
+  .tags {
+    grid-area: tags;
+  }
+
+  .titledetail {
+    font-size: 4.8rem;
+    line-height: 5rem;
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  .GeelInfoBlok {
+    background-color: var(--lightyellow);
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    margin-top: 5rem;
+    height: 43rem;
+  }
+
+  .articleDate::before {
+    width: .5rem;
+    background-color: var(--yellow);
+    height: 30rem;
+  }
+
+  .yellowline {
+    fill: none;
+    stroke-width: .4rem;
+    stroke: var(--yellow);
+  }
+
+  .eventImage {
+    width: 40vw;
+    height: 36rem;
+    object-fit: cover;
+    z-index: -4;
+    margin-top: 5rem;
+
+  }
+
+  /* footer */
+
+  .footer {
+    background-color: var(--lightblue);
+    color: var(--blue);
+    text-align: center;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+  }
+
 }

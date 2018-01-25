@@ -26,14 +26,12 @@
     </form>
   </section>
 
-
-
-
   <section  class="filter">
     <h2 class="hide">Filters</h2>
     <form action="index.php?page=activiteiten" method="post">
       <fieldset class="fieldsetFilter">
 
+      <div class="divFilter">
         <div class="fieldsetFilterDiv1">
           <section class="">
             <h2 class="filterTitle">Kies je activiteit met of zonder</h2>
@@ -68,16 +66,18 @@
             <a href=""><li class="filterDay">Zon 22/09</li></a>
           </ul>
           <input type="submit" name="action" value="Zoek" class="submitFilterForm">
-
+        </section>
+      </div>
       </fieldset>
     </form>
-  </section>
+</section>
 
 
   <section class="events">
     <?php foreach($events as $event): ?>
       <article class="eventArticle">
-      <a href="index.php?page=detail&amp;id=<?php echo $event['id'];?>">  <header><h2 class="eventTitle"><?php echo $event['title']; ?></h2></header>
+        <header><h1 class="eventTitle"><?php echo $event['title']; ?></h1></header>
+        <a href="index.php?page=detail&amp;id=<?php echo $event['id'];?>">
         <div class="eventsDriehoek">
         </div>
             <img src="assets/images/events/<?php echo $event['code'];?>.jpg" alt="" width="500" height="360" class="eventsImage">
@@ -108,6 +108,6 @@
         </section>
         </div>
       </article>
-    <? endforeach;?>
+    <?php endforeach;?>
   </section>
 </main>
