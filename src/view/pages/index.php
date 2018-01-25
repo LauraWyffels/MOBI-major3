@@ -38,7 +38,7 @@
     <!-- <img src="assets/images/carFreeFestival.png" alt="trein" width="442" height="665"> -->
   </section>
 
-  <section>
+  <section class="SectionCRF">
     <h2 class="CFD_title h2Home">CAR FREE DAY</h2>
     <div class="carFreeDay">
     <img
