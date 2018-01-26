@@ -44,28 +44,6 @@
     </div>
   </section>
 
-  <!-- <section class="flex strapdag">
-    <h2 class="Strapdag_title h2Home">STRAPDAG</h2>
-    <img
-    sizes="(max-width: 320px) 70vw, 200px"
-    srcset="
-    assets/images/strapdag_200.png 200w,
-    assets/images/strapdag_257.png 257w,
-    assets/images/strapdag_304.png 304w,
-    assets/images/strapdag_351.png 351w,
-    assets/images/strapdag_392.png 392w,
-    assets/images/strapdag_432.png 432w,
-    assets/images/strapdag_468.png 468w,
-    assets/images/strapdag_469.png 469w"
-    src="assets/images/strapdag_469.png"
-    alt="" class="imageStrapdag">
-    <div class="tekstStrapdag">
-      <p class="kinderen">Voor kinderen</p>
-      <h2 class="Strapdag_title h2Home">STRAPDAG</h2>
-      <p class="pStrapdag pHome">De dagelijkse functionele verplaatsing naar school te voet of met de fiets doen, heeft een impact op vlak van milieu, mobiliteit en het is gezond voor je kind!</p>
-    </div>
-    <div class="driehoek"></div>
-  </section> -->
   <section class="flex strapdag">
     <img
     sizes="(max-width: 320px) 70vw, 200px"
@@ -106,10 +84,8 @@
       assets/images/autovrije_zondag_495.png 495w,
       assets/images/autovrije_zondag_551.png 551w,
       assets/images/autovrije_zondag_605.png 605w,
-      assets/images/autovrije_zondag_657.png 657w,
-      assets/images/autovrije_zondag_692.png 692w,
-      assets/images/autovrije_zondag_708.png 708w"
-      src="assets/images/autovrije_zondag_708.png"
+      assets/images/autovrije_zondag_657.png 657w"
+      src="assets/images/autovrije_zondag_657.png"
       alt="" class="imageAutovrijeZondag">
   </section>
 

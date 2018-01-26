@@ -31,7 +31,7 @@
     <h2 class="hide">Filters</h2>
     <form action="index.php?page=activiteiten" method="get">
       <fieldset class="fieldsetFilter">
-
+        <input type="hidden" name="page" value="activiteiten">
       <div class="divFilter">
         <div class="fieldsetFilterDiv1">
           <section class="">
@@ -57,15 +57,38 @@
 
         <section class="fieldsetFilterDiv1">
           <h2 class="filterTitle">Kies je activiteit per dag</h2>
-          <ul class="filterDays">
-            <a href=""><li class="filterDay">Ma 16/09</li></a>
-            <a href=""><li class="filterDay">Di 17/09</li></a>
-            <a href=""><li class="filterDay">Woe 18/09</li></a>
-            <a href=""><li class="filterDay">Do 19/09</li></a>
-            <a href=""><li class="filterDay">Vrij 20/09</li></a>
-            <a href=""><li class="filterDay">Zat 21/09</li></a>
-            <a href=""><li class="filterDay">Zon 22/09</li></a>
-          </ul>
+            <div class="filterDays">
+
+            <label  class="filterDay">
+              <input type="radio" name="select" value="2018-09-16" class="radio">
+              <p>Ma 16/09</p>
+            </label>
+            <label  class="filterDay">
+              <input type="radio" name="select" value="2018-09-17" class="radio">
+              <p>Di 17/09</p>
+            </label>
+            <label  class="filterDay">
+              <input type="radio" name="select" value="2018-09-18" class="radio">
+              <p>Woe 18/09</p>
+            </label>
+            <label  class="filterDay">
+              <input type="radio" name="select" value="2018-09-19" class="radio">
+              <p>Do 19/09</p>
+            </label>
+            <label  class="filterDay">
+              <input type="radio" name="select" value="2018-09-20" class="radio">
+              <p>Vrij 20/09</p>
+            </label>
+            <label  class="filterDay">
+              <input type="radio" name="select" value="2018-09-21" class="radio">
+              <p>Zat 21/09</p>
+            </label>
+            <label  class="filterDay">
+              <input type="radio" name="select" value="2018-09-22" class="radio">
+              <p>Zon 22/09</p>
+            </label>
+
+          </div>
           <input type="submit" name="action" value="Zoek" class="submitFilterForm">
         </section>
       </div>

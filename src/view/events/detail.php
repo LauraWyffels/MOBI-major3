@@ -16,7 +16,12 @@
 
 <main class="detail">
   <section class="tags">
-    <ul><?php foreach($event['tags'] as $tag): ?><li><?php echo $tag['tag'];?></li><?php endforeach;?></ul>
+    <ul><?php
+
+    // var_dump($event); //array
+
+
+    foreach($event['tags'] as $tag): ?><li><?php echo $tag['tag'];?></li><?php endforeach;?></ul>
   </section>
   <section class="section1">
     <img src="assets/images/events/<?php echo $event['code'];?>.jpg" alt="" width="500" height="360" class="eventImage" >

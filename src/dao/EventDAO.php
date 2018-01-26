@@ -8,14 +8,33 @@ class EventDAO extends DAO {
     return $stmt->fetchall(PDO::FETCH_ASSOC);
   }
 
+  public function selectTags($id) {
+    $result = $this->search(array(
+      array(
+        'field' => 'id',
+        'comparator' => '=',
+        'value' => $id
+      )
+    ));
+    if (!empty($result)) {
+      return $result[0];
+    }
+    return false;
+  }
+
+  // public function selectTags($id) {
+  //   // $result = $this->search(array(array('field' => 'id', 'comparator' => '=', 'value' => $id)));
+  //   // if(!empty($result)) {
+  //   //   return
+  //   //   $return[0];
+  //   // } return false;
+  //
+  //   $sql = 'SELECT * FROM `ma3_auto_events_tags`';
+  //   $stmt = $this->pdo->prepare($sql);
+  //   return $stmt->fetchall(PDO::FETCH_ASSOC);
+  // }
+
   public function selectById($id) {
-    // $result = $this->search(array(array('field' => 'id', 'comparator' => '=', 'value' => $id)));
-    // if(!empty($result)) {
-    //   return
-    //   $return[0];
-    // } return false;
-
-
     $sql = "SELECT * FROM `ma3_auto_events` WHERE `id` = :id";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':id', $id);
@@ -54,9 +73,9 @@ class EventDAO extends DAO {
       } else if($columnName == 'tag') {
         $columnName = 'ma3_auto_tags.tag';
       }
-      //  else if($columnName == 'id') {
-      //   $columnName = 'ma3_auto_events.id';
-      // }
+       else if($columnName == 'id') {
+        $columnName = 'ma3_auto_events.id';
+      }
       //handle functions
       if(!empty($condition['function'])) {
         $function = DAO::getSanitizedFunction($condition['function']);

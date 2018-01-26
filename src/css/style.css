@@ -36,7 +36,6 @@ body {
   z-index: 20;
   margin: 0 auto;
   background-color: var(--white);
-
 }
 
 li {
@@ -84,6 +83,7 @@ a {
 }
 
 .navigatie {
+
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -245,9 +245,6 @@ a {
 
 /* AUTOVRIJE ZONDAG */
 
-.autovrijeZondag {
-  padding-bottom: 17.8rem;
-}
 
 .AZ_title {
   padding-left: 3rem;
@@ -331,6 +328,8 @@ a {
   margin-top: 5rem;
   background-color: var(--blue);
   color: var(--white);
+
+  padding-top: .5rem;
 }
 
 .sponsors {
@@ -383,8 +382,10 @@ a {
 @media only screen and (min-width: 390px) {
 
   .imageAutovrijeZondag {
-    position: absolute;
-    right: 0;
+    /* position: absolute; */
+    position: relative;
+    width: 80vw;
+    left: 20vw;
   }
 
   .AZ_title {
@@ -433,6 +434,15 @@ a {
   .datum {
     font-size: 1.6rem;
     padding-top: 2rem;
+  }
+
+  .eigenActiviteit {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  .divEigenActiviteit {
+    width: 50vw;
   }
 
 }
@@ -506,6 +516,7 @@ a {
   }
 
   .imageAutovrijeZondag {
+    left: 0;
     position: relative;
     padding-bottom: 0;
     width: 50vw;
@@ -561,7 +572,7 @@ a {
   }
 
   .divStrapdag {
-    width: 30vw;
+    width: 35vw;
     height: 22rem;
     padding: 3rem;
     padding-top: 15rem;
@@ -593,7 +604,8 @@ a {
   }
 
   .pStrapdag {
-    background-color: none;
+    background-color: transparent;
+
   }
 
   .SectionCRF {
@@ -636,6 +648,45 @@ a {
 
 }
 
+@media only screen and (min-width: 900px) {
+  /* eigen activiteit */
+
+  .eigenActiviteit {
+    width: 50vw;
+    height: 40rem;
+
+  }
+
+  .divEigenActiviteit {
+    width: 40vw;
+    padding-bottom: 5rem;
+
+  }
+
+  .titleEigenActiviteit {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .pEigenActiviteit {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    width: 35vw;
+
+  }
+
+  .submitInschrijven {
+    font-size: 3.6rem;
+    width: 27rem;
+  }
+
+  .autovrij_eigenActiviteit {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
 @media only screen and (min-width: 1247px) {
 
   .navigatie {
@@ -652,6 +703,23 @@ a {
   }
 
   /* header activiteiten */
+
+  .backgroundheader {
+    position: absolute;
+    z-index: -4;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .girl_bike2 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 9.9rem;
+
+  }
 
   .weekvdmobiliteit {
     font-size: 2rem;
@@ -695,9 +763,9 @@ a {
     margin-bottom: 3rem;
   }
 
-  /* .CFF_image {
+  .CFF_image {
     position: relative;
-  } */
+  }
 
   /* CAR FREE DAY */
 
@@ -749,91 +817,51 @@ a {
   }
 
   .divAutovrijeZondag {
-    margin-top: 8rem;
+    margin-top: 0;
     position: absolute;
-    margin-left: -35rem;
+    margin-left: -5rem;
+  }
+
+  .eigenActiviteit {
+    margin: 0;
   }
 
   /* eigen activiteit */
 
   .eigenActiviteit {
-    background-color: var(--blue);
     width: 50rem;
     height: 50rem;
-    background-image: url(../assets/images/stippen.png);
 
   }
 
   .divEigenActiviteit {
-    margin: 0 auto;
-    background-color: var(--blue);
     width: 45rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     margin-top: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 
   }
 
   .titleEigenActiviteit {
-    background-color: var(--yellow);
     font-size: 3.6rem;
-    margin-top: 3.2rem;
-    text-align: center;
-    padding: 1rem;
-    font-family: 'Avenir Next';
-    font-weight: 500;
   }
 
   .pEigenActiviteit {
-    margin: 0 auto;
     font-size: 1.8rem;
-    text-align: center;
-    margin-top: 5rem;
-    padding-top: 3rem;
+    margin-top: 3rem;
     width: 38rem;
-
   }
 
   .submitInschrijven {
     font-size: 3.6rem;
-    background-color: var(--yellow);
-    padding: 1rem 3rem;
     width: 27rem;
-    margin: 0 auto;
     margin-top: 8rem;
-    border: none;
-    font-family: 'Avenir Next';
-    font-weight: 500;
-  }
-
-  .submitInschrijven:hover {
-    background-color: var(--lightyellow);
-    border: none;
-
-  }
-
-  .submitInschrijven:focus {
-    background-color: var(--lightyellow);
-    outline: none;
-    border: none;
-
-  }
-
-  .autovrij_eigenActiviteit {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
   }
 
   /* sponsors */
 
   .titleSponsors {
     font-size: 6rem;
-    display: flex;
-    justify-content: center;
-    margin-top: 10rem;
+    padding-top: 2rem;
   }
 
   .sponsors {
@@ -992,6 +1020,10 @@ a {
 
   }
 
+  .radio {
+    display: none;
+  }
+
   .filterDay {
     color: #767575;
     background-color: var(--lightblue);
@@ -1005,7 +1037,14 @@ a {
     background-color: var(--grey);
   }
 
-  .filter:focus {
+  .radio:checked + .filterDay {
+    background-color: var(--grey);
+    color: var(--lightblue);
+    border: none;
+    outline: none;
+  }
+
+  .filterDay:focus {
     background-color: var(--grey);
     color: var(--lightblue);
     border: none;

@@ -69,11 +69,9 @@
             </li>
           </ul>
         </li>
-
         <li>
           <a href="#" class="hoverNavigatie">Informatie</a>
         </li>
-
           <li class="navmobile navActiviteiten">
             <a href="#" class="hoverNavigatie">Meer</a>
             <ul class="subNavigatie">
@@ -89,7 +87,6 @@
               </li>
             </ul>
           </li>
-
         <div class="navdesk">
           <li>
             <a href="#" class="hoverNavigatie">Scholen</a>
@@ -102,7 +99,6 @@
           </li>
         </div>
       </ul>
-
     </nav>
 
     <?php
@@ -111,33 +107,50 @@
 
       <a href="index.php"><img src="assets/images/logo.svg" alt="" width="100" height="50" class="logo"></a>
 
-    <nav class="nav">
-      <ul class="navigatie">
-        <li class="navActiviteiten">
-          <a href="index.php?page=activiteiten" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?>">Activiteiten</a>
-          <ul class="subNavigatie">
-            <li class="subNavigatieA">
-              <a href="index.php?page=activiteiten" class="a">Alle activiteiten</a>
+      <nav class="nav">
+        <ul class="navigatie">
+          <li class="navActiviteiten">
+            <a href="index.php?page=activiteiten" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?>">Activiteiten</a>
+            <ul class="subNavigatie">
+              <li class="subNavigatieA">
+                <a href="index.php?page=activiteiten" class="a">Alle activiteiten</a>
+              </li>
+              <li class="subNavigatieA">
+                <a href="#" class="a">Eigen activiteit</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="hoverNavigatie">Informatie</a>
+          </li>
+            <li class="navmobile navActiviteiten">
+              <a href="#" class="hoverNavigatie">Meer</a>
+              <ul class="subNavigatie">
+
+                <li class="subNavigatieMeer">
+                  <a href="#" class="hoverNavigatie">Scholen</a>
+                </li>
+                <li class="subNavigatieMeer">
+                  <a href="#" class="hoverNavigatie">Vorige edities</a>
+                </li>
+                <li class="subNavigatieMeer">
+                  <a href="#" class="hoverNavigatie">Contact</a>
+                </li>
+              </ul>
             </li>
-            <li class="subNavigatieA">
-              <a href="#" class="a">Eigen activiteit</a>
+          <div class="navdesk">
+            <li>
+              <a href="#" class="hoverNavigatie">Scholen</a>
             </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" class="hoverNavigatie">Informatie</a>
-        </li>
-        <li>
-          <a href="#" class="hoverNavigatie">Scholen</a>
-        </li>
-        <li>
-          <a href="#" class="hoverNavigatie">Vorige edities</a>
-        </li>
-        <li>
-          <a href="#" class="hoverNavigatie">Contact</a>
-        </li>
-      </ul>
-    </nav>
+            <li>
+              <a href="#" class="hoverNavigatie">Vorige edities</a>
+            </li>
+            <li>
+              <a href="#" class="hoverNavigatie">Contact</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
 
     <?php
       }
