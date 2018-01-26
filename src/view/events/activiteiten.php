@@ -49,7 +49,8 @@
               </label>
               <label class="column">
                 <span>Stad</span>
-                <input type="text" name="city" class="inputplaats inputplaatsStad" placeholder="Kortrijk" id="city">
+                <input type="text" name="city" class="inputplaats inputplaatsStad" placeholder="Kortrijk" id="city" value="<?php echo $_GET['city']; ?>">
+                <!-- <input type="text" name="city" class="inputplaats inputplaatsStad" placeholder="Kortrijk" id="city" value="<?php if($_GET['city'] === " " ): ?>'' <?php else: $_GET['city']; endif ?>"> -->
               </label>
             </div>
           </section>

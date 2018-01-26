@@ -196,7 +196,7 @@ a {
 /* Strapdag */
 
 .strapdag {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .driehoek {
@@ -240,11 +240,9 @@ a {
 .imageStrapdag {
   position: absolute;
   z-index: 3;
-  padding-top: .8rem;
 }
 
 /* AUTOVRIJE ZONDAG */
-
 
 .AZ_title {
   padding-left: 3rem;
@@ -377,6 +375,10 @@ a {
   .imageAutovrijeZondag {
     padding-bottom: 0;
   }
+
+  .imageStrapdag {
+    margin-top: -1rem;
+  }
 }
 
 @media only screen and (min-width: 390px) {
@@ -391,6 +393,10 @@ a {
   .AZ_title {
     width: 50vw;
   }
+
+  .imageStrapdag {
+    margin-top: -2rem;
+  }
 }
 
 @media only screen and (min-width: 420px) {
@@ -402,13 +408,30 @@ a {
   .pHome {
     font-size: 1.5rem;
   }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+  .SectionCRF {
+    padding-top: 10rem;
+  }
+
+  .imageStrapdag {
+    margin-left: 5rem;
+  }
+
 }
 
 @media only screen and (min-width: 530px) {
 
   .pCarFreeFestival {
-    width: 26rem;
+    width: 24rem;
     margin-bottom: 3rem;
+  }
+
+  .tekstCFF {
+    margin-left: -30rem;
   }
 
   .pHome {
@@ -445,6 +468,21 @@ a {
     width: 50vw;
   }
 
+  .CFD_title {
+    margin-left: 20vw;
+  }
+
+  .imageStrapdag {
+    margin-left: 8rem;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  .imageStrapdag {
+    margin-top: -5rem;
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -494,6 +532,83 @@ a {
   .datum {
     font-size: 1.8rem;
     padding-top: 5rem;
+  }
+
+  /* CAR FREE FESTIVAL */
+
+  .CFF_title {
+    margin-bottom: 3.5rem;
+  }
+
+  .tekstCFF {
+    margin-right: -15rem;
+  }
+
+  .pCarFreeFestival {
+    width: 30rem;
+    margin-bottom: 3rem;
+  }
+
+  .CFF_image {
+    position: relative;
+  }
+
+  .carFreeFestival {
+    margin-bottom: 1rem;
+  }
+
+  /* Strapdag */
+
+  .strapdag {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+    margin-top: -10rem;
+
+  }
+
+  .driehoek {
+    width: 90vw;
+    height: 55rem;
+    right: 0;
+  }
+
+  .divStrapdag {
+    width: 45vw;
+    height: 22rem;
+    padding: 2rem;
+    padding-top: 15rem;
+    background-color: var(--lightyellow);
+    right: 0;
+    position: absolute;
+  }
+
+  .tekstStrapdag {
+    margin-top: 14rem;
+  }
+
+  .Strapdag_title {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -12rem;
+  }
+
+  .kinderen {
+    font-size: 3rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 3.5rem;
+    margin-left: 5rem;
+    display: inline-block;
+  }
+
+  .imageStrapdag {
+    margin-top: 13rem;
+    margin-left: -25rem;
+  }
+
+  .pStrapdag {
+    background-color: transparent;
+
   }
 
   /* AUTOVRIJE ZONDAG */
@@ -593,15 +708,15 @@ a {
     font-size: 5rem;
     padding: 2.5rem 1rem;
     margin-bottom: 3.5rem;
-    margin-left: -5rem;
+    /* margin-left: 25rem; */
     display: inline-block;
   }
 
-  .imageStrapdag {
+  /* .imageStrapdag {
     position: absolute;
     margin-top: -5rem;
     margin-left: -40rem;
-  }
+  } */
 
   .pStrapdag {
     background-color: transparent;
@@ -685,9 +800,49 @@ a {
     justify-content: center;
     align-items: flex-end;
   }
+
+}
+
+@media only screen and (min-width: 930px) {
+
+  .imageStrapdag {
+    margin-top: -1rem;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .carFreeDay {
+    margin-right: 5rem;
+  }
+
+  .CFD_title {
+    margin-top: -20rem;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .pCarFreeDay {
+    width: 30rem;
+    margin-left: -5rem;
+  }
+
+  .kinderen {
+    margin-bottom: 3.5rem;
+    margin-left: 15rem;
+  }
+
+  .imageStrapdag {
+    margin-top: -5rem;
+  }
 }
 
 @media only screen and (min-width: 1247px) {
+
+  .pHome {
+    font-size: 1.8rem;
+  }
 
   .navigatie {
     width: 65vw;
@@ -755,7 +910,7 @@ a {
 
   .carFreeFestival {
     justify-content: flex-end;
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 
   .pCarFreeFestival {
@@ -769,35 +924,23 @@ a {
 
   /* CAR FREE DAY */
 
-  .carFreeDay {
-    margin-right: 5rem;
-    margin-top: -45rem;
-  }
-
   .CFD_title {
-    font-size: 4rem;
-    margin-top: 30rem;
-    margin-left: -10rem;
-    margin-bottom: 3.5rem;
-  }
+    margin-top: -40rem;
 
-  .pCarFreeDay {
-    width: 30rem;
-    margin-left: -5rem;
   }
 
   /* STRAPDAG */
 
-  .strapdag {
-    margin-top: -15rem;
-  }
-
-  .kinderen {
-    font-size: 6rem;
-    margin-left: -20rem;
+  .imageStrapdag {
+    margin-top: -8rem;
+    margin-left: -30rem;
   }
 
   /* AUTOVRIJE ZONDAG */
+
+  .autovrij_eigenActiviteit {
+    margin-top: 18rem;
+  }
 
   .autovrijeZondag {
     justify-content: flex-end;
@@ -822,13 +965,10 @@ a {
     margin-left: -5rem;
   }
 
-  .eigenActiviteit {
-    margin: 0;
-  }
-
   /* eigen activiteit */
 
   .eigenActiviteit {
+    margin: 0;
     width: 50rem;
     height: 50rem;
 
@@ -1037,14 +1177,7 @@ a {
     background-color: var(--grey);
   }
 
-  .radio:checked + .filterDay {
-    background-color: var(--grey);
-    color: var(--lightblue);
-    border: none;
-    outline: none;
-  }
-
-  .filterDay:focus {
+  .radio:checked + p, .filterDay:focus { /* todo: css class gebruiken */
     background-color: var(--grey);
     color: var(--lightblue);
     border: none;

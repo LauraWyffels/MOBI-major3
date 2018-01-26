@@ -7,15 +7,13 @@
       <a href="index.php?page=detail&amp;id=22" class="ctahome">Meer info</a>
     </div>
     <img
-      sizes="(max-width: 320px) 50vw, 200px"
+      sizes="(max-width: 430px) 50vw, (max-width: 500px) 45vw,  (max-width: 1800px) 35vw"
       srcset="
       assets/images/carFreeFestival_200.png 200w,
       assets/images/carFreeFestival_280.png 280w,
       assets/images/carFreeFestival_345.png 345w,
       assets/images/carFreeFestival_406.png 406w,
-      assets/images/carFreeFestival_459.png 459w,
-      assets/images/carFreeFestival_495.png 495w,
-      assets/images/carFreeFestival_498.png 498w"
+      assets/images/carFreeFestival_459.png 459w"
 
       alt="trein" class="CFF_image">
     <!-- <img src="assets/images/carFreeFestival.png" alt="trein" width="442" height="665"> -->
@@ -25,19 +23,16 @@
     <h2 class="CFD_title h2Home">CAR FREE DAY</h2>
     <div class="carFreeDay">
     <img
-      sizes="(max-width: 320px) 50vw, 200px"
+      sizes="(max-width: 320px) 50vw, (max-width: 1800px) 35vw"
       srcset="
       assets/images/carFreeDay_200.png 200w,
-      assets/images/carFreeDay_249.png 249w,
       assets/images/carFreeDay_293.png 293w,
       assets/images/carFreeDay_332.png 332w,
-      assets/images/carFreeDay_369.png 369w,
       assets/images/carFreeDay_403.png 403w,
       assets/images/carFreeDay_436.png 436w,
       assets/images/carFreeDay_468.png 468w,
       assets/images/carFreeDay_473.png 473w,
       assets/images/carFreeDay_476.png 476w"
-      src="assets/images/carFreeDay_476.png"
       alt="">
     <!-- <img src="assets/images/carFreeDay.png" alt="tram" width="476" height="828"> -->
       <p class="pCarFreeDay pHome">De donderdag vragen we werkgevers om één dag extra aandacht te besteden aan duurzame woon-werkmobiliteit en medewerkers aan te moedigen om zonder auto naar het werk te komen.</p>
@@ -46,7 +41,7 @@
 
   <section class="flex strapdag">
     <img
-    sizes="(max-width: 320px) 70vw, 200px"
+    sizes="(max-width: 450px) 70vw, (max-width: 930px) 50vw, (max-width: 1800px) 45vw"
     srcset="
     assets/images/strapdag_200.png 200w,
     assets/images/strapdag_257.png 257w,
@@ -54,9 +49,7 @@
     assets/images/strapdag_351.png 351w,
     assets/images/strapdag_392.png 392w,
     assets/images/strapdag_432.png 432w,
-    assets/images/strapdag_468.png 468w,
-    assets/images/strapdag_469.png 469w"
-    src="assets/images/strapdag_469.png"
+    assets/images/strapdag_468.png 468w"
     alt="" class="imageStrapdag">
   <div class="tekstStrapdag">
     <p class="kinderen">Voor kinderen</p>

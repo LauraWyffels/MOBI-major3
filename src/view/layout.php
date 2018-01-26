@@ -59,10 +59,10 @@
     <nav>
       <ul class="navigatie">
         <li class="navActiviteiten">
-          <a href="index.php?page=activiteiten" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?>">Activiteiten</a>
+          <a href="index.php?page=activiteiten&city=" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?>">Activiteiten</a>
           <ul class="subNavigatie">
             <li class="subNavigatieA">
-              <a href="index.php?page=activiteiten" class="a">Alle activiteiten</a>
+              <a href="index.php?page=activiteiten&city=" class="a">Alle activiteiten</a>
             </li>
             <li class="subNavigatieA">
               <a href="#" class="a">Eigen activiteit</a>
@@ -113,7 +113,7 @@
             <a href="index.php?page=activiteiten" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?>">Activiteiten</a>
             <ul class="subNavigatie">
               <li class="subNavigatieA">
-                <a href="index.php?page=activiteiten" class="a">Alle activiteiten</a>
+                <a href="index.php?page=activiteiten&city=" class="a">Alle activiteiten</a>
               </li>
               <li class="subNavigatieA">
                 <a href="#" class="a">Eigen activiteit</a>
