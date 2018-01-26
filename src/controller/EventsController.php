@@ -42,17 +42,26 @@ class EventsController extends Controller {
 
     //search op datum
     if (isset($_GET['select'])) {
-            $conditions[] = array(
-              'field' => 'start',
-              'comparator' => '<=',
-              'value' => $_GET['select'] . ' 23:59:59'
-            );
-            $conditions[] = array(
-              'field' => 'end',
-              'comparator' => '>=',
-              'value' => $_GET['select'] . ' 00:00:00'
-            );
-          }
+      $conditions[] = array(
+        'field' => 'start',
+        'comparator' => '<=',
+        'value' => $_GET['select'] . ' 23:59:59'
+      );
+      $conditions[] = array(
+        'field' => 'end',
+        'comparator' => '>=',
+        'value' => $_GET['select'] . ' 00:00:00'
+      );
+    }
+
+    //search op tags
+    if (isset($_GET['tag'])) {
+      $conditions[] = array(
+        'field' => 'tag',
+        'comparator' => '=',
+        'value' => $_GET['tag']
+      );
+    }
 
     $this->set('title', 'activiteiten');
     $this->set('currentPage', 'activiteiten');
@@ -62,18 +71,7 @@ class EventsController extends Controller {
   }
 
   public function detail() {
-    // $conditions = array();
-    // $this->set('title', 'detail');
     $this->set('currentPage', 'detail');
-
-    // if(empty($_GET['id']) || !$event = $this->eventDAO->selectById($_GET['id'])) {
-    //   $_SESSION['error'] = 'Invalid event';
-    //   header('Location: index.php');
-    // }
-    //
-    // $this->set('event', $event);
-
-
 
     $event = $this->eventDAO->selectTags($_GET['id']);
     $this->set('event', $event);

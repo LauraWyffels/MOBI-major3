@@ -90,8 +90,7 @@
       </article>
     </div>
     <?php if($event['practical'] === ""){ ?>
-    <?php echo " ";?>
-    <?php
+    <?php echo " ";
       }else{
     ?>
     <h3 class="titledetail">Praktisch</h3>

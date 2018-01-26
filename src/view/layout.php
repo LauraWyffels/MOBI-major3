@@ -58,8 +58,11 @@
 
     <nav>
       <ul class="navigatie">
+        <li >
+          <a href="index.php"><img src="assets/images/house.svg" alt="home" width="25" height="25"></a>
+        </li>
         <li class="navActiviteiten">
-          <a href="index.php?page=activiteiten&city=" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?>">Activiteiten</a>
+          <a href="index.php?page=activiteiten&city=" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?> pijltje">Events</a>
           <ul class="subNavigatie">
             <li class="subNavigatieA">
               <a href="index.php?page=activiteiten&city=" class="a">Alle activiteiten</a>
@@ -73,7 +76,7 @@
           <a href="#" class="hoverNavigatie">Informatie</a>
         </li>
           <li class="navmobile navActiviteiten">
-            <a href="#" class="hoverNavigatie">Meer</a>
+            <a href="#" class="hoverNavigatie pijltje">Meer</a>
             <ul class="subNavigatie">
 
               <li class="subNavigatieMeer">
@@ -109,8 +112,11 @@
 
       <nav class="nav">
         <ul class="navigatie">
+          <li >
+            <a href="index.php"><img src="assets/images/house.svg" alt="home" width="25" height="25" class="homeIcon"></a>
+          </li>
           <li class="navActiviteiten">
-            <a href="index.php?page=activiteiten" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?>">Activiteiten</a>
+            <a href="index.php?page=activiteiten&city=" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?> pijltje">Activiteiten</a>
             <ul class="subNavigatie">
               <li class="subNavigatieA">
                 <a href="index.php?page=activiteiten&city=" class="a">Alle activiteiten</a>

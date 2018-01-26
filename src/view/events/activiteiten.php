@@ -37,7 +37,7 @@
           <section class="">
             <h2 class="filterTitle">Kies je activiteit met of zonder</h2>
             <div class="flex">
-              <input class="filterKinderen" type="submit" name="Kinderen" value="Kinderen">
+              <input class="filterKinderen" type="radio" name="Kinderen" value="Kinderen">
             </div>
           </section>
           <section class="">
@@ -50,7 +50,6 @@
               <label class="column">
                 <span>Stad</span>
                 <input type="text" name="city" class="inputplaats inputplaatsStad" placeholder="Kortrijk" id="city" value="<?php echo $_GET['city']; ?>">
-                <!-- <input type="text" name="city" class="inputplaats inputplaatsStad" placeholder="Kortrijk" id="city" value="<?php if($_GET['city'] === " " ): ?>'' <?php else: $_GET['city']; endif ?>"> -->
               </label>
             </div>
           </section>
