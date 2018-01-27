@@ -105,7 +105,6 @@
               </label>
             </div>
             <input type="submit" name="action" value="Zoek" class="submitFilterForm">
-
           </section>
         </div>
       </fieldset>

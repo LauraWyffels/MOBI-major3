@@ -17,6 +17,11 @@ body {
   line-height: 3rem;
 }
 
+input {
+  -webkit-appearance: none; /* stylelint-disable-line */
+  border-radius: 0;
+}
+
 .hide {
   display: none;
 }
@@ -31,12 +36,6 @@ body {
   justify-content: center;
   width: 100vw;
 }
-
-/* .nav {
-  width: 100vw;
-  margin: 0 auto;
-
-} */
 
 li {
   list-style: none;
@@ -63,7 +62,6 @@ a {
 
 .navActiviteiten:hover .subNavigatie {
   display: block;
-
 }
 
 .subNavigatieMeer {
@@ -82,7 +80,6 @@ a {
 
 .homeIcon {
   margin: -1rem;
-
 }
 
 .pijltje::after {
@@ -119,7 +116,6 @@ a {
 }
 
 .logo {
-  /* margin-top: 1rem; */
   margin-bottom: -1.1rem;
 }
 
@@ -144,6 +140,7 @@ a {
 .week {
   color: var(--blue);
   font-size: 4.5rem;
+  font-family: 'Avenir Next';
 }
 
 .mobiliteit {
@@ -182,7 +179,6 @@ a {
 .carFreeFestival {
   display: flex;
   justify-content: flex-end;
-
 }
 
 .CFF_image {
@@ -199,7 +195,6 @@ a {
   background-color: var(--yellow);
   padding: 1rem;
   font-size: 2rem;
-
 }
 
 .ctahome:hover {
@@ -286,7 +281,6 @@ a {
 
 .imageAutovrijeZondag {
   margin-top: -16rem;
-
 }
 
 /* eigen activiteit */
@@ -357,7 +351,6 @@ a {
   margin-top: 5rem;
   background-color: var(--blue);
   color: var(--white);
-
   padding-top: .5rem;
 }
 
@@ -418,11 +411,6 @@ a {
 
 .submitSearch {
   display: none;
-
-}
-
-.submitSearch:hover {
-  border: var(--yellow) .5rem solid;
 }
 
 .fieldsetSearch {
@@ -433,7 +421,7 @@ a {
 }
 
 .filter {
-  background: var(--lightyellow);
+  background-color: var(--lightyellow);
   color: var(--grey);
   padding-bottom: 5rem;
 
@@ -473,7 +461,6 @@ a {
   width: 16rem;
   height: 4rem;
   padding-left: 1rem;
-
 }
 
 .filterDays {
@@ -540,7 +527,6 @@ a {
 
 .eventArticle {
   margin-bottom: 5rem;
-
 }
 
 .eventsImage {
@@ -548,7 +534,6 @@ a {
   height: 17.5rem;
   object-fit: cover;
   z-index: -4;
-
 }
 
 .eventTitle {
@@ -598,7 +583,6 @@ a {
   justify-content: space-between;
   font: 1.5rem;
   padding: .1rem 1rem;
-
 }
 
 .eventsAdres {
@@ -646,20 +630,14 @@ a {
   /* overzicht events */
 
   .eventsImage {
-    width: 100vw;
     height: 20rem;
-    object-fit: cover;
-    z-index: -4;
   }
 
   .eventTitle {
     font-size: 2.1rem;
-    height: 8.5rem;
   }
 
   .eventsDriehoek {
-    position: absolute;
-    width: 100vw;
     height: 20rem;
     background: linear-gradient(45deg, var(--blue) 33%, transparent 33%);
   }
@@ -669,7 +647,6 @@ a {
 @media only screen and (min-width: 390px) {
 
   .imageAutovrijeZondag {
-    /* position: absolute; */
     position: relative;
     width: 80vw;
     left: 20vw;
@@ -692,7 +669,6 @@ a {
   /* overzicht events */
 
   .eventsImage {
-    width: 100vw;
     height: 22rem;
   }
 
@@ -701,10 +677,7 @@ a {
   }
 
   .eventsDriehoek {
-    position: absolute;
-    width: 100vw;
     height: 22rem;
-    background: linear-gradient(45deg, var(--blue) 33%, transparent 33%);
   }
 
 }
@@ -726,27 +699,19 @@ a {
   /* overzicht events */
 
   .eventsImage {
-    width: 100vw;
     height: 25rem;
-  }
-
-  .eventTitle {
-    font-size: 2.2rem;
   }
 
   .eventsDriehoek {
-    position: absolute;
-    width: 100vw;
     height: 25rem;
     background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
   }
+
   .eventsAdres {
     font-size: 1.5rem;
-    font-weight: bold;
   }
 
   .eventsDatum {
-    text-align: right;
     font-size: 1.5rem;
   }
 
@@ -772,7 +737,6 @@ a {
     width: 90vw;
     margin: 0 auto;
     margin-bottom: 5rem;
-
   }
 
   .eventTitle {
@@ -781,18 +745,13 @@ a {
 
   .eventsImage {
     width: 90vw;
-    height: 25rem;
   }
 
   .eventsDriehoek {
-    position: absolute;
     width: 90vw;
-    height: 25rem;
-    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
   }
 
   .eventTimeDiv {
-    position: absolute;
     margin-top: -17rem;
   }
 
@@ -802,7 +761,6 @@ a {
 
   .pCarFreeFestival {
     width: 24rem;
-    margin-bottom: 3rem;
   }
 
   .tekstCFF {
@@ -826,7 +784,6 @@ a {
   .mobiliteit {
     font-size: 4rem;
     padding: .1rem 1.5rem;
-    line-height: 6rem;
   }
 
   .datum {
@@ -859,9 +816,6 @@ a {
 
   .eventArticle {
     width: 80vw;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-
   }
 
   .eventTitle {
@@ -874,10 +828,8 @@ a {
   }
 
   .eventsDriehoek {
-    position: absolute;
     width: 80vw;
     height: 30rem;
-    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
   }
 
 }
@@ -898,9 +850,6 @@ a {
 
   .eventArticle {
     width: 70vw;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-
   }
 
   .eventTitle {
@@ -913,10 +862,8 @@ a {
   }
 
   .eventsDriehoek {
-    position: absolute;
     width: 70vw;
     height: 32rem;
-    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
   }
 }
 
@@ -932,10 +879,6 @@ a {
 
   .navigatie {
     width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    font-size: 1.5rem;
   }
 
   .navmobile {
@@ -953,7 +896,6 @@ a {
   .wvdm {
     padding-top: 17rem;
     font-size: 4rem;
-    line-height: 4rem;
   }
 
   .week {
@@ -962,7 +904,6 @@ a {
 
   .mobiliteit {
     font-size: 6rem;
-    padding: .1rem 1.5rem;
     line-height: 10rem;
   }
 
@@ -981,11 +922,6 @@ a {
     margin-right: -15rem;
   }
 
-  .pCarFreeFestival {
-    width: 30rem;
-    margin-bottom: 3rem;
-  }
-
   .CFF_image {
     position: relative;
   }
@@ -1001,7 +937,6 @@ a {
     justify-content: flex-end;
     margin-bottom: 5rem;
     margin-top: -10rem;
-
   }
 
   .driehoek {
@@ -1032,20 +967,17 @@ a {
 
   .kinderen {
     font-size: 3rem;
-    padding: 1.5rem 1rem;
-    margin-bottom: 3.5rem;
     margin-left: 5rem;
     display: inline-block;
   }
 
   .imageStrapdag {
     margin-top: 13rem;
-    margin-left: -25rem;
+    margin-left: -28rem;
   }
 
   .pStrapdag {
     background-color: transparent;
-
   }
 
   /* AUTOVRIJE ZONDAG */
@@ -1069,10 +1001,7 @@ a {
 
   .imageAutovrijeZondag {
     left: 0;
-    position: relative;
-    padding-bottom: 0;
     width: 50vw;
-
   }
 
   /* eigen activiteit */
@@ -1084,7 +1013,6 @@ a {
   .divEigenActiviteit {
     width: 40vw;
     padding-bottom: 5rem;
-
   }
 
   .titleEigenActiviteit {
@@ -1118,10 +1046,8 @@ a {
 
   .weekvdmobiliteit {
     font-size: 2rem;
-    background-color: var(--blue);
     padding: .1rem 6rem;
     display: inline-block;
-    font-family: 'Avenir Next';
   }
 
   .titleActiviteit {
@@ -1141,56 +1067,27 @@ a {
     width: 40vw;
     margin: 0 auto;
     margin-top: -15rem;
-
   }
 
   .divFilter {
     display: flex;
     justify-content: space-between;
-
   }
 
   .filterDays {
-    display: flex;
-    flex-wrap: wrap;
     width: 50vw;
-    text-align: center;
-
-  }
-
-  .submitFilterForm {
-    background-color: var(--white);
-    color: var(--yellow);
-    font-size: 2.4rem;
-    display: flex;
-    justify-content: center;
-    border: var(--white) .5rem solid;
-    margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 840px) {
 
-  .strapdag {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 5rem;
-    margin-top: -10rem;
-
-  }
-
   .driehoek {
     width: 110rem;
-    height: 55rem;
-    right: 0;
   }
 
   .divStrapdag {
     width: 35vw;
-    height: 22rem;
     padding: 3rem;
-    padding-top: 15rem;
-    background-color: var(--lightyellow);
   }
 
   .tekstStrapdag {
@@ -1198,21 +1095,12 @@ a {
   }
 
   .Strapdag_title {
-    position: relative;
-    margin: 0 auto;
-    margin-top: -13rem;
+    margin-top: -1rem;
   }
 
   .kinderen {
     font-size: 5rem;
     padding: 2.5rem 1rem;
-    margin-bottom: 3.5rem;
-    display: inline-block;
-  }
-
-  .pStrapdag {
-    background-color: transparent;
-
   }
 
   .SectionCRF {
@@ -1223,20 +1111,12 @@ a {
     width: 80vw;
   }
 
-  /* .nav {
-    width: 80vw;
-    margin: 0 auto;
-
-  } */
-
   .navdesk {
     width: 43vw;
   }
 
   .wvdm {
-    padding-top: 17rem;
     font-size: 4.5rem;
-    line-height: 4rem;
   }
 
   .week {
@@ -1245,13 +1125,10 @@ a {
 
   .mobiliteit {
     font-size: 6rem;
-    padding: .1rem 1.5rem;
-    line-height: 10rem;
   }
 
   .datum {
     font-size: 2rem;
-    padding-top: 5rem;
   }
 
   .headerimage {
@@ -1260,7 +1137,6 @@ a {
   }
 
   .zoekbalk {
-    width: 40vw;
     margin-top: -10rem;
   }
 
@@ -1268,9 +1144,6 @@ a {
 
   .eventArticle {
     width: 50vw;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-
   }
 
   .eventTitle {
@@ -1283,19 +1156,15 @@ a {
   }
 
   .eventsDriehoek {
-    position: absolute;
     width: 50vw;
     height: 34rem;
-    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
   }
 
   .eventsAdres {
     font-size: 1.8rem;
-    font-weight: bold;
   }
 
   .eventsDatum {
-    text-align: right;
     font-size: 1.8rem;
   }
 
@@ -1305,15 +1174,7 @@ a {
   /* eigen activiteit */
 
   .eigenActiviteit {
-    width: 50vw;
     height: 40rem;
-
-  }
-
-  .divEigenActiviteit {
-    width: 40vw;
-    padding-bottom: 5rem;
-
   }
 
   .titleEigenActiviteit {
@@ -1325,18 +1186,11 @@ a {
     font-size: 1.5rem;
     padding-top: 2rem;
     width: 35vw;
-
   }
 
   .submitInschrijven {
     font-size: 3.6rem;
     width: 27rem;
-  }
-
-  .autovrij_eigenActiviteit {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
   }
 
 }
@@ -1349,7 +1203,6 @@ a {
 
   .zoekbalk {
     margin-top: -16rem;
-
   }
 
 }
@@ -1367,12 +1220,10 @@ a {
   }
 
   .pCarFreeDay {
-    width: 30rem;
     margin-left: -5rem;
   }
 
   .kinderen {
-    margin-bottom: 3.5rem;
     margin-left: 15rem;
   }
 
@@ -1387,10 +1238,7 @@ a {
   }
 
   .filterDays {
-    display: flex;
-    flex-wrap: wrap;
     width: 40vw;
-    text-align: center;
   }
 
   /* overzicht events */
@@ -1411,21 +1259,11 @@ a {
   .eventsImage {
     width: 45rem;
     height: 36rem;
-    object-fit: cover;
-    z-index: -4;
   }
 
   .eventTitle {
     font-size: 3rem;
-    background-color: var(--pink);
-    color: var(--white);
     width: 45rem;
-    height: 8.5rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 5rem;
     line-height: 4rem;
   }
 
@@ -1439,17 +1277,8 @@ a {
   }
 
   .eventsDriehoek {
-    position: absolute;
     width: 45rem;
     height: 36rem;
-    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
-
-  }
-
-  .eventTimeDiv {
-    position: absolute;
-    margin-top: -17rem;
-
   }
 
   .eventTime {
@@ -1457,17 +1286,7 @@ a {
   }
 
   .eventInfo {
-    display: flex;
-    justify-content: space-between;
     font: 2.4rem;
-  }
-
-  .eventsAdres {
-    font-weight: bold;
-  }
-
-  .eventsDatum {
-    text-align: right;
   }
 
 }
@@ -1480,7 +1299,6 @@ a {
 
   .navigatie {
     width: 65vw;
-    margin: 0 auto;
   }
 
   .navdesk {
@@ -1505,18 +1323,12 @@ a {
 
   .pCarFreeFestival {
     width: 30rem;
-    margin-bottom: 3rem;
-  }
-
-  .CFF_image {
-    position: relative;
   }
 
   /* CAR FREE DAY */
 
   .CFD_title {
     margin-top: -40rem;
-
   }
 
   /* STRAPDAG */
@@ -1541,8 +1353,6 @@ a {
     width: 10vw;
     line-height: 4rem;
     padding-bottom: 3rem;
-    font-family: 'Avenir Next';
-    font-weight: 500;
   }
 
   .pAutovrijeZondag {
@@ -1561,14 +1371,12 @@ a {
     margin: 0;
     width: 50rem;
     height: 50rem;
-
   }
 
   .divEigenActiviteit {
     width: 45rem;
     margin-top: 3rem;
     padding-bottom: 6rem;
-
   }
 
   .titleEigenActiviteit {
@@ -1582,8 +1390,6 @@ a {
   }
 
   .submitInschrijven {
-    font-size: 3.6rem;
-    width: 27rem;
     margin-top: 8rem;
   }
 
@@ -1596,8 +1402,6 @@ a {
 
   .sponsors {
     margin: 5rem 20rem;
-    display: flex;
-    justify-content: space-around;
   }
 
   .blauwelijnSponsors {
@@ -1617,81 +1421,50 @@ a {
   }
 
   .zoekbalk {
-    background-color: var(--yellow);
     width: 50rem;
     height: 7rem;
-    display: flex;
-    justify-content: space-between;
-    z-index: 5;
     margin-top: -15rem;
   }
 
   .searchimage {
     width: 6rem;
     height: 7rem;
-    padding-left: 1rem;
   }
 
   .searchinput {
-    margin: .5rem;
-    border: none;
-    outline: none;
     height: 6rem;
     font-size: 2rem;
     width: 40rem;
-    padding-left: 1rem;
-    margin-right: 3.5rem;
-    margin-left: 2rem;
-    background-color: var(--yellow);
-    border-bottom: var(--white) .3rem solid;
-    color: var(--white);
-  }
-
-  .searchinput::placeholder {
-    color: var(--white);
   }
 
   .submitSearch {
+    display: inline;
+    z-index: 5;
     background-color: var(--white);
     color: var(--yellow);
     font-size: 2.4rem;
-    z-index: 5;
     width: 10rem;
     margin: 0 auto;
     margin-top: 3rem;
     border: var(--white) .5rem solid;
-
   }
 
   .submitSearch:hover {
     border: var(--yellow) .5rem solid;
   }
 
-  .fieldsetSearch {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .divFilter {
-    display: flex;
     justify-content: space-around;
-
   }
 
   .filter {
-    background: var(--lightyellow);
     width: 100vw;
     height: 35rem;
-
     color: var(--grey);
   }
 
   .filterTitle {
     font-size: 2.4rem;
-    padding-top: 5rem;
-    color: #434242;
   }
 
   .filterKinderen {
@@ -1722,158 +1495,16 @@ a {
   }
 
   .inputplaats {
-    background-color: var(--lightblue);
     font-size: 1.8rem;
-    border: none;
-    outline: none;
-  }
-
-  .inputPostcode {
-    text-align: center;
-    width: 8rem;
-    height: 4rem;
   }
 
   .inputplaatsStad {
     width: 20rem;
-    height: 4rem;
-    padding-left: 1rem;
-
   }
 
   .filterDays {
-    display: flex;
-    flex-wrap: wrap;
     width: 45rem;
-    text-align: center;
-
   }
-
-  .radio {
-    display: none;
-  }
-
-  .filterDay {
-    color: #767575;
-    background-color: var(--lightblue);
-    width: 7rem;
-    font-size: 2rem;
-    margin: 2rem 2rem 2rem .1rem;
-  }
-
-  .filterDay:hover {
-    color: var(--lightblue);
-    background-color: var(--grey);
-  }
-
-  .radio:checked + p, .filterDay:focus { /* todo: css class gebruiken */
-    background-color: var(--grey);
-    color: var(--lightblue);
-    border: none;
-    outline: none;
-  }
-
-  .submitFilterForm {
-    background-color: var(--white);
-    color: var(--yellow);
-    font-size: 2.4rem;
-
-    margin-left: 35rem;
-    border: var(--white) .5rem solid;
-  }
-
-  .submitFilterForm:hover {
-    border: var(--yellow) .5rem solid;
-  }
-
-  .submitFilterForm:focus {
-    border: var(--yellow) .5rem solid;
-    outline: none;
-  }
-
-  .plaats {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 1.8rem;
-    color: #434242;
-  }
-
-  /* .events {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    font-family: 'Avenir Next';
-
-  }
-
-  .eventArticle {
-    margin-bottom: 10rem;
-
-  }
-
-  .eventsImage {
-    width: 50rem;
-    height: 36rem;
-    object-fit: cover;
-    z-index: -4;
-
-  }
-
-  .eventTitle {
-    font-size: 3rem;
-    background-color: var(--pink);
-    color: var(--white);
-    width: 50rem;
-    height: 8.5rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 5rem;
-    line-height: 4rem;
-  }
-
-  .eventTimeTitle {
-    font: 1.8rem;
-    color: var(--white);
-    background-color: var(--yellow);
-    display: inline-block;
-    padding: .15rem 1.5rem;
-    padding-right: 5rem;
-  }
-
-  .eventsDriehoek {
-    position: absolute;
-    width: 50rem;
-    height: 36rem;
-    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
-
-  }
-
-  .eventTimeDiv {
-    position: absolute;
-    margin-top: -15rem;
-
-  }
-
-  .eventTime {
-    margin-left: 3rem;
-  }
-
-  .eventInfo {
-    display: flex;
-    justify-content: space-between;
-    font: 2.4rem;
-  }
-
-  .eventsAdres {
-    font-weight: bold;
-  }
-
-  .eventsDatum {
-    text-align: right;
-  } */
 
   /* headerDetail */
 
@@ -1947,18 +1578,5 @@ a {
     object-fit: cover;
     z-index: -4;
     margin-top: 5rem;
-
   }
-
-  /* footer */
-
-  .footer {
-    background-color: var(--lightblue);
-    color: var(--blue);
-    text-align: center;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-  }
-
 }

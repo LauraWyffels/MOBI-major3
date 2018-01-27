@@ -21,7 +21,7 @@
         s.parentNode.insertBefore(wf, s);
       })(document);
     </script>
-  </head>
+  <?php echo $css; ?>
   </head>
   <body>
 
