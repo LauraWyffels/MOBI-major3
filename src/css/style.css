@@ -563,6 +563,7 @@ a {
   justify-content: center;
   line-height: 5rem;
   line-height: 3rem;
+  padding: .1rem 1rem;
 }
 
 .eventTimeTitle {
@@ -595,17 +596,19 @@ a {
 .eventInfo {
   display: flex;
   justify-content: space-between;
-  font: 2rem;
+  font: 1.5rem;
   padding: .1rem 1rem;
 
 }
 
 .eventsAdres {
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
 .eventsDatum {
   text-align: right;
+  font-size: 1.3rem;
 }
 
 @media only screen and (min-width: 360px) {
@@ -639,6 +642,28 @@ a {
   .imageStrapdag {
     margin-top: -1rem;
   }
+
+  /* overzicht events */
+
+  .eventsImage {
+    width: 100vw;
+    height: 20rem;
+    object-fit: cover;
+    z-index: -4;
+  }
+
+  .eventTitle {
+    font-size: 2.1rem;
+    height: 8.5rem;
+  }
+
+  .eventsDriehoek {
+    position: absolute;
+    width: 100vw;
+    height: 20rem;
+    background: linear-gradient(45deg, var(--blue) 33%, transparent 33%);
+  }
+
 }
 
 @media only screen and (min-width: 390px) {
@@ -664,6 +689,24 @@ a {
     margin: 0 auto;
   }
 
+  /* overzicht events */
+
+  .eventsImage {
+    width: 100vw;
+    height: 22rem;
+  }
+
+  .eventTitle {
+    font-size: 2.2rem;
+  }
+
+  .eventsDriehoek {
+    position: absolute;
+    width: 100vw;
+    height: 22rem;
+    background: linear-gradient(45deg, var(--blue) 33%, transparent 33%);
+  }
+
 }
 
 @media only screen and (min-width: 420px) {
@@ -680,6 +723,33 @@ a {
     width: 80vw;
   }
 
+  /* overzicht events */
+
+  .eventsImage {
+    width: 100vw;
+    height: 25rem;
+  }
+
+  .eventTitle {
+    font-size: 2.2rem;
+  }
+
+  .eventsDriehoek {
+    position: absolute;
+    width: 100vw;
+    height: 25rem;
+    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
+  }
+  .eventsAdres {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .eventsDatum {
+    text-align: right;
+    font-size: 1.5rem;
+  }
+
 }
 
 @media only screen and (min-width: 480px) {
@@ -694,6 +764,36 @@ a {
 
   .zoekbalk {
     width: 70vw;
+  }
+
+  /* overzicht events */
+
+  .eventArticle {
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+  }
+
+  .eventTitle {
+    width: 90vw;
+  }
+
+  .eventsImage {
+    width: 90vw;
+    height: 25rem;
+  }
+
+  .eventsDriehoek {
+    position: absolute;
+    width: 90vw;
+    height: 25rem;
+    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
+  }
+
+  .eventTimeDiv {
+    position: absolute;
+    margin-top: -17rem;
   }
 
 }
@@ -755,6 +855,31 @@ a {
     width: 60vw;
   }
 
+  /* overzicht events */
+
+  .eventArticle {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+  }
+
+  .eventTitle {
+    width: 80vw;
+  }
+
+  .eventsImage {
+    width: 80vw;
+    height: 30rem;
+  }
+
+  .eventsDriehoek {
+    position: absolute;
+    width: 80vw;
+    height: 30rem;
+    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
+  }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -767,6 +892,31 @@ a {
     width: 50vw;
     margin-top: -20rem;
     margin-left: 28rem;
+  }
+
+  /* overzicht events */
+
+  .eventArticle {
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+  }
+
+  .eventTitle {
+    width: 70vw;
+  }
+
+  .eventsImage {
+    width: 70vw;
+    height: 32rem;
+  }
+
+  .eventsDriehoek {
+    position: absolute;
+    width: 70vw;
+    height: 32rem;
+    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
   }
 }
 
@@ -1114,6 +1264,41 @@ a {
     margin-top: -10rem;
   }
 
+  /* overzicht events */
+
+  .eventArticle {
+    width: 50vw;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+  }
+
+  .eventTitle {
+    width: 50vw;
+  }
+
+  .eventsImage {
+    width: 50vw;
+    height: 34rem;
+  }
+
+  .eventsDriehoek {
+    position: absolute;
+    width: 50vw;
+    height: 34rem;
+    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
+  }
+
+  .eventsAdres {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .eventsDatum {
+    text-align: right;
+    font-size: 1.8rem;
+  }
+
 }
 
 @media only screen and (min-width: 900px) {
@@ -1195,6 +1380,8 @@ a {
     margin-top: -5rem;
   }
 
+  /* events filters */
+
   .days {
     margin-left: 5rem;
   }
@@ -1204,6 +1391,83 @@ a {
     flex-wrap: wrap;
     width: 40vw;
     text-align: center;
+  }
+
+  /* overzicht events */
+
+  .events {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    font-family: 'Avenir Next';
+  }
+
+  .eventArticle {
+    margin: 5rem 1rem;
+    width: 45rem;
+  }
+
+  .eventsImage {
+    width: 45rem;
+    height: 36rem;
+    object-fit: cover;
+    z-index: -4;
+  }
+
+  .eventTitle {
+    font-size: 3rem;
+    background-color: var(--pink);
+    color: var(--white);
+    width: 45rem;
+    height: 8.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 5rem;
+    line-height: 4rem;
+  }
+
+  .eventTimeTitle {
+    font: 1.8rem;
+    color: var(--white);
+    background-color: var(--yellow);
+    display: inline-block;
+    padding: .15rem 1.5rem;
+    padding-right: 5rem;
+  }
+
+  .eventsDriehoek {
+    position: absolute;
+    width: 45rem;
+    height: 36rem;
+    background: linear-gradient(45deg, var(--blue) 30%, transparent 30%);
+
+  }
+
+  .eventTimeDiv {
+    position: absolute;
+    margin-top: -17rem;
+
+  }
+
+  .eventTime {
+    margin-left: 3rem;
+  }
+
+  .eventInfo {
+    display: flex;
+    justify-content: space-between;
+    font: 2.4rem;
+  }
+
+  .eventsAdres {
+    font-weight: bold;
+  }
+
+  .eventsDatum {
+    text-align: right;
   }
 
 }
@@ -1360,7 +1624,6 @@ a {
     justify-content: space-between;
     z-index: 5;
     margin-top: -15rem;
-
   }
 
   .searchimage {
@@ -1535,7 +1798,7 @@ a {
     color: #434242;
   }
 
-  .events {
+  /* .events {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -1610,7 +1873,7 @@ a {
 
   .eventsDatum {
     text-align: right;
-  }
+  } */
 
   /* headerDetail */
 
