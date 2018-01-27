@@ -32,12 +32,11 @@ body {
   width: 100vw;
 }
 
-.nav {
-  /* z-index: 100; */
+/* .nav {
+  width: 100vw;
   margin: 0 auto;
-  background-color: var(--white);
 
-}
+} */
 
 li {
   list-style: none;
@@ -60,12 +59,6 @@ a {
   padding: 1rem;
   font-size: 1.5rem;
   font-family: 'Avenir Next';
-}
-
-.navigatie2 {
-  width: 100vw;
-  position: fixed;
-  z-index: 20;
 }
 
 .navActiviteiten:hover .subNavigatie {
@@ -126,8 +119,12 @@ a {
 }
 
 .logo {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   margin-bottom: -1.1rem;
+}
+
+.headerActiviteiten {
+  display: none;
 }
 
 .wvdm {
@@ -435,18 +432,16 @@ a {
   align-items: center;
 }
 
-.divFilter {
-  /* display: flex;
-  justify-content: space-around; */
+.filter {
+  background: var(--lightyellow);
+  color: var(--grey);
+  padding-bottom: 5rem;
 
 }
 
-.filter {
-  background: var(--lightyellow);
-  width: 100vw;
-  color: var(--grey);
-  padding-left: 2rem;
-  padding-bottom: 5rem;
+.formFilter {
+  display: flex;
+  justify-content: center;
 }
 
 .filterTitle {
@@ -662,6 +657,13 @@ a {
   .imageStrapdag {
     margin-top: -2rem;
   }
+
+  .zoekbalk {
+    width: 90vw;
+    display: flex;
+    margin: 0 auto;
+  }
+
 }
 
 @media only screen and (min-width: 420px) {
@@ -674,6 +676,10 @@ a {
     font-size: 1.5rem;
   }
 
+  .zoekbalk {
+    width: 80vw;
+  }
+
 }
 
 @media only screen and (min-width: 480px) {
@@ -684,6 +690,10 @@ a {
 
   .imageStrapdag {
     margin-left: 5rem;
+  }
+
+  .zoekbalk {
+    width: 70vw;
   }
 
 }
@@ -741,12 +751,22 @@ a {
     margin-left: 8rem;
   }
 
+  .zoekbalk {
+    width: 60vw;
+  }
+
 }
 
 @media only screen and (min-width: 600px) {
 
   .imageStrapdag {
     margin-top: -5rem;
+  }
+
+  .zoekbalk {
+    width: 50vw;
+    margin-top: -20rem;
+    margin-left: 28rem;
   }
 }
 
@@ -777,6 +797,8 @@ a {
     display: flex;
     justify-content: space-around;
   }
+
+  /* home */
 
   .wvdm {
     padding-top: 17rem;
@@ -933,6 +955,68 @@ a {
     justify-content: center;
     align-items: flex-end;
   }
+
+  /* activiteiten */
+
+  .logo {
+    display: none;
+  }
+
+  .headerActiviteiten {
+    display: block;
+  }
+
+  .weekvdmobiliteit {
+    font-size: 2rem;
+    background-color: var(--blue);
+    padding: .1rem 6rem;
+    display: inline-block;
+    font-family: 'Avenir Next';
+  }
+
+  .titleActiviteit {
+    display: block;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    padding-top: 10rem;
+    font-size: 7rem;
+    color: var(--white);
+    line-height: 4rem;
+  }
+
+  .zoekbalk {
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: -15rem;
+
+  }
+
+  .divFilter {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .filterDays {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    text-align: center;
+
+  }
+
+  .submitFilterForm {
+    background-color: var(--white);
+    color: var(--yellow);
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    border: var(--white) .5rem solid;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 840px) {
@@ -973,15 +1057,8 @@ a {
     font-size: 5rem;
     padding: 2.5rem 1rem;
     margin-bottom: 3.5rem;
-    /* margin-left: 25rem; */
     display: inline-block;
   }
-
-  /* .imageStrapdag {
-    position: absolute;
-    margin-top: -5rem;
-    margin-left: -40rem;
-  } */
 
   .pStrapdag {
     background-color: transparent;
@@ -995,6 +1072,12 @@ a {
   .navigatie {
     width: 80vw;
   }
+
+  /* .nav {
+    width: 80vw;
+    margin: 0 auto;
+
+  } */
 
   .navdesk {
     width: 43vw;
@@ -1024,6 +1107,11 @@ a {
   .headerimage {
     width: 80vw;
     margin: 0 auto;
+  }
+
+  .zoekbalk {
+    width: 40vw;
+    margin-top: -10rem;
   }
 
 }
@@ -1074,6 +1162,11 @@ a {
     margin-top: -1rem;
   }
 
+  .zoekbalk {
+    margin-top: -16rem;
+
+  }
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1101,6 +1194,18 @@ a {
   .imageStrapdag {
     margin-top: -5rem;
   }
+
+  .days {
+    margin-left: 5rem;
+  }
+
+  .filterDays {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    text-align: center;
+  }
+
 }
 
 @media only screen and (min-width: 1247px) {
@@ -1111,50 +1216,11 @@ a {
 
   .navigatie {
     width: 65vw;
+    margin: 0 auto;
   }
 
   .navdesk {
     width: 35vw;
-  }
-
-  /* header activiteiten */
-
-  .backgroundheader {
-    position: absolute;
-    z-index: -4;
-    width: 100vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  .girl_bike2 {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 9.9rem;
-
-  }
-
-  .weekvdmobiliteit {
-    font-size: 2rem;
-    background-color: var(--blue);
-    padding: .1rem 6rem;
-    display: inline-block;
-    font-family: 'Avenir Next';
-  }
-
-  .titleActiviteit {
-    display: block;
-    justify-content: center;
-    width: 100vw;
-    position: absolute;
-    text-align: center;
-    z-index: 3;
-    padding-top: 10rem;
-    font-size: 7rem;
-    color: var(--white);
-    line-height: 4rem;
   }
 
   /* CAR FREE FESTIVAL */
@@ -1284,7 +1350,6 @@ a {
     display: flex;
     justify-content: center;
     position: absolute;
-    margin-top: -25rem;
   }
 
   .zoekbalk {
@@ -1293,8 +1358,9 @@ a {
     height: 7rem;
     display: flex;
     justify-content: space-between;
-
     z-index: 5;
+    margin-top: -15rem;
+
   }
 
   .searchimage {

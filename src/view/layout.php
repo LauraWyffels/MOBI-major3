@@ -53,7 +53,6 @@
         assets/images/header_1067.png 1067w"
         src="assets/images/header_1067.png"
         alt="" class="headerimage">
-
     </header>
 
     <nav>
@@ -108,8 +107,6 @@
       }else{
     ?>
 
-
-
     <nav class="nav">
       <ul class="navigatie navigatie2">
         <li >
@@ -160,7 +157,7 @@
 
 
     <img
-      sizes="(max-width: 531px) 75vw"
+      sizes="(max-width: 430px) 75vw, (max-width: 1440px) 50vw"
       srcset="
       assets/images/logo_200.png 200w,
       assets/images/logo_250.png 250w,
