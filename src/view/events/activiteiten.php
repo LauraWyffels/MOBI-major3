@@ -1,6 +1,6 @@
 <main>
 
-  <header class="headerActiviteiten">
+  <!-- <header class="headerActiviteiten">
     <div class="titleActiviteit">
       <h1  class="activiteiten">Activiteiten</h1>
       <p class="weekvdmobiliteit">Week van de mobiliteit</p>
@@ -12,7 +12,7 @@
       <img src="assets/images/bike_girl_left.png" alt="weekVanDeMobiliteit" width="415" height="402">
       <img src="assets/images/bike_girl_right.png" alt="weekVanDeMobiliteit" width="415" height="402">
     </div>
-  </header>
+  </header> -->
 
   <section class="search">
     <form class="" action="index.php?page=activiteiten" method="get">
@@ -34,12 +34,12 @@
         <input type="hidden" name="page" value="activiteiten">
       <div class="divFilter">
         <div class="fieldsetFilterDiv1">
-          <section class="">
+          <!-- <section class="">
             <h2 class="filterTitle">Kies je activiteit met of zonder</h2>
             <div class="flex">
               <input class="filterKinderen" type="radio" name="Kinderen" value="Kinderen">
             </div>
-          </section>
+          </section> -->
           <section class="">
             <h2 class="filterTitle">Kies de plaats van je activiteit </h2>
             <div class="plaats">
@@ -61,31 +61,31 @@
 
             <label  class="filterDay">
               <input type="radio" name="select" value="2018-09-16" class="radio">
-              <p>Ma 16/09</p>
+              <p class="pRadio">Ma 16/09</p>
             </label>
             <label  class="filterDay">
               <input type="radio" name="select" value="2018-09-17" class="radio">
-              <p>Di 17/09</p>
+              <p class="pRadio">Di 17/09</p>
             </label>
             <label  class="filterDay">
               <input type="radio" name="select" value="2018-09-18" class="radio">
-              <p>Woe 18/09</p>
+              <p class="pRadio">Woe 18/09</p>
             </label>
             <label  class="filterDay">
               <input type="radio" name="select" value="2018-09-19" class="radio">
-              <p>Do 19/09</p>
+              <p class="pRadio">Do 19/09</p>
             </label>
             <label  class="filterDay">
               <input type="radio" name="select" value="2018-09-20" class="radio">
-              <p>Vrij 20/09</p>
+              <p class="pRadio">Vrij 20/09</p>
             </label>
             <label  class="filterDay">
               <input type="radio" name="select" value="2018-09-21" class="radio">
-              <p>Zat 21/09</p>
+              <p class="pRadio">Zat 21/09</p>
             </label>
             <label  class="filterDay">
               <input type="radio" name="select" value="2018-09-22" class="radio">
-              <p>Zon 22/09</p>
+              <p class="pRadio">Zon 22/09</p>
             </label>
 
           </div>

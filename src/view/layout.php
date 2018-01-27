@@ -108,55 +108,72 @@
       }else{
     ?>
 
-      <a href="index.php"><img src="assets/images/logo.svg" alt="" width="100" height="50" class="logo"></a>
 
-      <nav class="nav">
-        <ul class="navigatie">
-          <li >
-            <a href="index.php"><img src="assets/images/house.svg" alt="home" width="25" height="25" class="homeIcon"></a>
-          </li>
-          <li class="navActiviteiten">
-            <a href="index.php?page=activiteiten&city=" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?> pijltje">Activiteiten</a>
+
+    <nav class="nav">
+      <ul class="navigatie navigatie2">
+        <li >
+          <a href="index.php"><img src="assets/images/house.svg" alt="home" width="25" height="25" class="homeIcon"></a>
+        </li>
+        <li class="navActiviteiten">
+          <a href="index.php?page=activiteiten&city=" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?> pijltje">Events</a>
+          <ul class="subNavigatie">
+            <li class="subNavigatieA">
+              <a href="index.php?page=activiteiten&city=" class="a">Alle events</a>
+            </li>
+            <li class="subNavigatieA">
+              <a href="#" class="a">Eigen event</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="hoverNavigatie">Informatie</a>
+        </li>
+          <li class="navmobile navActiviteiten">
+            <a href="#" class="hoverNavigatie pijltje">Meer</a>
             <ul class="subNavigatie">
-              <li class="subNavigatieA">
-                <a href="index.php?page=activiteiten&city=" class="a">Alle activiteiten</a>
+
+              <li class="subNavigatieMeer">
+                <a href="#" class="hoverNavigatie">Scholen</a>
               </li>
-              <li class="subNavigatieA">
-                <a href="#" class="a">Eigen activiteit</a>
+              <li class="subNavigatieMeer">
+                <a href="#" class="hoverNavigatie">Vorige edities</a>
+              </li>
+              <li class="subNavigatieMeer">
+                <a href="#" class="hoverNavigatie">Contact</a>
               </li>
             </ul>
           </li>
+        <div class="navdesk">
           <li>
-            <a href="#" class="hoverNavigatie">Informatie</a>
+            <a href="#" class="hoverNavigatie">Scholen</a>
           </li>
-            <li class="navmobile navActiviteiten">
-              <a href="#" class="hoverNavigatie">Meer</a>
-              <ul class="subNavigatie">
+          <li>
+            <a href="#" class="hoverNavigatie">Vorige edities</a>
+          </li>
+          <li>
+            <a href="#" class="hoverNavigatie">Contact</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
 
-                <li class="subNavigatieMeer">
-                  <a href="#" class="hoverNavigatie">Scholen</a>
-                </li>
-                <li class="subNavigatieMeer">
-                  <a href="#" class="hoverNavigatie">Vorige edities</a>
-                </li>
-                <li class="subNavigatieMeer">
-                  <a href="#" class="hoverNavigatie">Contact</a>
-                </li>
-              </ul>
-            </li>
-          <div class="navdesk">
-            <li>
-              <a href="#" class="hoverNavigatie">Scholen</a>
-            </li>
-            <li>
-              <a href="#" class="hoverNavigatie">Vorige edities</a>
-            </li>
-            <li>
-              <a href="#" class="hoverNavigatie">Contact</a>
-            </li>
-          </div>
-        </ul>
-      </nav>
+
+    <img
+      sizes="(max-width: 531px) 75vw"
+      srcset="
+      assets/images/logo_200.png 200w,
+      assets/images/logo_250.png 250w,
+      assets/images/logo_294.png 294w,
+      assets/images/logo_335.png 335w,
+      assets/images/logo_369.png 369w,
+      assets/images/logo_404.png 404w,
+      assets/images/logo_439.png 439w,
+      assets/images/logo_470.png 470w,
+      assets/images/logo_501.png 501w,
+      assets/images/logo_521.png 521w,
+      assets/images/logo_531.png 531w"
+      alt="Week van de mobiliteit" class="logo">
 
     <?php
       }

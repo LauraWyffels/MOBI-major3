@@ -36,6 +36,7 @@ body {
   /* z-index: 100; */
   margin: 0 auto;
   background-color: var(--white);
+
 }
 
 li {
@@ -59,6 +60,12 @@ a {
   padding: 1rem;
   font-size: 1.5rem;
   font-family: 'Avenir Next';
+}
+
+.navigatie2 {
+  width: 100vw;
+  position: fixed;
+  z-index: 20;
 }
 
 .navActiviteiten:hover .subNavigatie {
@@ -116,6 +123,11 @@ a {
 
 .hoverNavigatie:hover {
   border-bottom: var(--yellow) .3rem solid;
+}
+
+.logo {
+  margin-top: 1rem;
+  margin-bottom: -1.1rem;
 }
 
 .wvdm {
@@ -368,6 +380,237 @@ a {
   height: 10rem;
   display: flex;
   justify-content: center;
+}
+
+/* activiteiten overzicht */
+
+.zoekbalk {
+  background-color: var(--yellow);
+  width: 100vw;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.searchimage {
+  width: 3.3rem;
+  height: 3.7rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.searchinput {
+  margin: .5rem;
+  border: none;
+  outline: none;
+  height: 4rem;
+  font-size: 1.8rem;
+  width: 80vw;
+  padding-left: 1rem;
+  margin-right: 3.5rem;
+  margin-left: 2rem;
+  background-color: var(--yellow);
+  border-bottom: var(--white) .3rem solid;
+  color: var(--white);
+}
+
+.searchinput::placeholder {
+  color: var(--white);
+}
+
+.submitSearch {
+  display: none;
+
+}
+
+.submitSearch:hover {
+  border: var(--yellow) .5rem solid;
+}
+
+.fieldsetSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divFilter {
+  /* display: flex;
+  justify-content: space-around; */
+
+}
+
+.filter {
+  background: var(--lightyellow);
+  width: 100vw;
+  color: var(--grey);
+  padding-left: 2rem;
+  padding-bottom: 5rem;
+}
+
+.filterTitle {
+  font-size: 2rem;
+  padding-top: 5rem;
+  color: #434242;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  margin-right: 3rem;
+}
+
+.inputplaats {
+  background-color: var(--lightblue);
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.inputPostcode {
+  text-align: center;
+  width: 8rem;
+  height: 4rem;
+}
+
+.inputplaatsStad {
+  width: 16rem;
+  height: 4rem;
+  padding-left: 1rem;
+
+}
+
+.filterDays {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  text-align: center;
+}
+
+.radio {
+  display: none;
+}
+
+.filterDay {
+  color: #767575;
+  background-color: var(--lightblue);
+  width: 7rem;
+  font-size: 2rem;
+  margin: 2rem 2rem 2rem .1rem;
+}
+
+.filterDay:hover {
+  color: var(--lightblue);
+  background-color: var(--grey);
+}
+
+.radio:checked + .pRadio:focus {
+  background-color: var(--grey);
+  color: var(--lightblue);
+  border: none;
+  outline: none;
+}
+
+.submitFilterForm {
+  background-color: var(--white);
+  color: var(--yellow);
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  border: var(--white) .5rem solid;
+  margin: 0 auto;
+}
+
+.submitFilterForm:hover {
+  border: var(--yellow) .5rem solid;
+}
+
+.submitFilterForm:focus {
+  border: var(--yellow) .5rem solid;
+  outline: none;
+}
+
+.plaats {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.8rem;
+  color: #434242;
+}
+
+.events {
+  width: 100vw;
+  font-family: 'Avenir Next';
+}
+
+.eventArticle {
+  margin-bottom: 5rem;
+
+}
+
+.eventsImage {
+  width: 100vw;
+  height: 17.5rem;
+  object-fit: cover;
+  z-index: -4;
+
+}
+
+.eventTitle {
+  font-size: 2rem;
+  background-color: var(--pink);
+  color: var(--white);
+  width: 100vw;
+  height: 8.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 5rem;
+  line-height: 3rem;
+}
+
+.eventTimeTitle {
+  font: 1.6rem;
+  color: var(--white);
+  background-color: var(--yellow);
+  display: inline-block;
+  padding: 0 1rem;
+  padding-right: 1rem;
+  margin-top: 5rem;
+}
+
+.eventsDriehoek {
+  position: absolute;
+  width: 100vw;
+  height: 17.5rem;
+  background: linear-gradient(45deg, var(--blue) 35%, transparent 35%);
+}
+
+.eventTimeDiv {
+  position: absolute;
+  margin-top: -15rem;
+}
+
+.eventTime {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.eventInfo {
+  display: flex;
+  justify-content: space-between;
+  font: 2rem;
+  padding: .1rem 1rem;
+
+}
+
+.eventsAdres {
+  font-weight: bold;
+}
+
+.eventsDatum {
+  text-align: right;
 }
 
 @media only screen and (min-width: 360px) {
@@ -872,11 +1115,6 @@ a {
 
   .navdesk {
     width: 35vw;
-  }
-
-  .logo {
-    position: fixed;
-    z-index: 39;
   }
 
   /* header activiteiten */
