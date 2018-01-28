@@ -1,4 +1,4 @@
-<header class="headerActiviteiten">
+<header class="headerActiviteiten headerDetail">
   <div class="titleActiviteit">
     <h1  class="detailTitle"><?php echo $event['title']; ?></h1>
     <p class="weekvdmobiliteitDetail">Week van de mobiliteit</p>
@@ -22,6 +22,7 @@
 </header>
 
 <main class="detail">
+  <h1  class="titleDetail"><?php echo $event['title']; ?></h1>
   <section>
     <h2 class="hide">tags</h2>
     <ul  class="tags"><?php
@@ -92,20 +93,21 @@
       <!-- </article> -->
     </section>
 
-    <section>
+    <section class="content">
+      <!-- <h2 class=""><?php echo $event['title']; ?></h2> -->
+      <h3 class="practicalTitle">Informatie</h3>
+      <p class="infoP"><?php echo $event['content'];?></p>
+    </section>
+
+    <section class="practical">
       <?php if($event['practical'] === ""){ ?>
       <?php echo " ";
         }else{
       ?>
-      <h3 class="titledetail">Praktisch</h3>
+      <h3 class="practicalTitle">Praktisch</h3>
       <?php
         }
       ?>
-      <p><?php echo $event['practical'];?></p>
-    </section>
-
-    <section class="section2">
-      <h2 class="titledetail"><?php echo $event['title']; ?></h2>
-      <p><?php echo $event['content'];?></p>
+      <p class="infoP"><?php echo $event['practical'];?></p>
     </section>
 </main>

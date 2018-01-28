@@ -184,9 +184,19 @@
     </div>
 
     <footer class="footer">
-      <p>Laura Wyffels
-      <br>Major 3
-      <br>2017-2018</p>
+      <div class="">
+        <h2>Tweet met de hashtag <a href="https://twitter.com/hashtag/goedopweg?src=hash">#goedopweg</a></h2>
+        <a href="https://twitter.com/week_mobiliteit"><img src="assets/images/twitter.png" alt="twitter" width="54" height="43"></a>
+      </div>
+      <div>
+        <p>Laura Wyffels
+        <br>Major 3
+        <br>2017-2018</p>
+      </div>
+      <div class="">
+        <h2>Volg ons op instagram</h2>
+        <a href="https://www.instagram.com/weekvandemobiliteit/"><img src="assets/images/instagram.svg" alt="instagram" width="54" height="54"></a>
+      </div>
     </footer>
 
     <?php echo $js;?>
