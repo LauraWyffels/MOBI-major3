@@ -634,7 +634,6 @@ strong {
   background-color: var(--lightyellow);
   width: 100vw;
   font-size: 1.3rem;
-
   display: grid;
   grid-template-columns: 5rem 1fr 1fr;
   grid-template-areas:
@@ -644,6 +643,7 @@ strong {
 
   grid-row-gap: 3rem;
   padding: 2rem;
+  margin-bottom: 3rem;
 }
 
 .iconAdres {
@@ -697,12 +697,12 @@ strong {
   padding-bottom: 5rem;
 }
 
-.yellowline {
+/* .yellowline {
   display: none;
   fill: none;
   stroke-width: .4rem;
   stroke: var(--yellow);
-}
+} */
 
 .eventImage {
   width: 100vw;
@@ -725,7 +725,6 @@ strong {
   font-size: 1.5rem;
   padding: 1rem;
 }
-
 
 @media only screen and (min-width: 360px) {
 
@@ -900,6 +899,12 @@ strong {
     justify-content: center;
   }
 
+  .GeelInfoBlok {
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
 }
 
 @media only screen and (min-width: 530px) {
@@ -981,7 +986,7 @@ strong {
 
   .GeelInfoBlok {
     background-color: var(--lightyellow);
-    width: 100vw;
+    width: 70vw;
     font-size: 1.3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1329,6 +1334,15 @@ strong {
   .locatie {
     margin-left: 4rem;
   }
+
+  .eventImage {
+    width: 60vw;
+    height: 30rem;
+  }
+
+  .GeelInfoBlok {
+    width: 60vw;
+  }
 }
 
 @media only screen and (min-width: 840px) {
@@ -1439,6 +1453,10 @@ strong {
 
   .locatie {
     margin: 0 auto;
+  }
+
+  .tags {
+    width: 70vw;
   }
 
 }
@@ -1560,6 +1578,23 @@ strong {
 
   .eventInfo {
     font: 2.4rem;
+  }
+
+  .tags {
+    width: 60vw;
+  }
+
+  .eventImage {
+    height: 33rem;
+  }
+
+  .DetailSection {
+    display: flex;
+  }
+
+  .GeelInfoBlok {
+    height: 33rem;
+    margin-top: 3rem;
   }
 
 }
@@ -1786,20 +1821,8 @@ strong {
     margin-top: 5rem;
   }
 
-  .GeelInfoBlok {
-    background-color: var(--lightyellow);
-    width: 40vw;
-    margin-top: 5rem;
-    height: 43rem;
-  }
-
   .eventImage {
-    width: 40vw;
-    height: 36rem;
-    object-fit: cover;
-    z-index: -4;
-    margin-top: 5rem;
-    display: inline;
+    width: 55vw;
   }
 
   /*
