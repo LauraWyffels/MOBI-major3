@@ -697,23 +697,12 @@ strong {
   padding-bottom: 5rem;
 }
 
-/* .yellowline {
-  display: none;
-  fill: none;
-  stroke-width: .4rem;
-  stroke: var(--yellow);
-} */
-
 .eventImage {
   width: 100vw;
   height: 20rem;
   object-fit: cover;
   margin-top: 3rem;
   margin-bottom: -1rem;
-}
-
-.practical {
-  margin-top: 4rem;
 }
 
 .practicalTitle {
@@ -905,6 +894,12 @@ strong {
     margin-bottom: 3rem;
   }
 
+  .DetailSection2 {
+    width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+
 }
 
 @media only screen and (min-width: 530px) {
@@ -989,8 +984,7 @@ strong {
     width: 70vw;
     font-size: 1.3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5rem 1fr 1fr;
+    grid-template: 5rem 1fr 1fr / 1fr 1fr 1fr;
     grid-template-areas:
       'iconAdres iconDate iconOrganisator'
       'adres datum organisators'
@@ -1029,6 +1023,11 @@ strong {
 
   .eventImage {
     width: 70vw;
+  }
+
+  .DetailSection2 {
+    width: 70vw;
+    margin: 0 auto;
   }
 
 }
@@ -1597,6 +1596,21 @@ strong {
     margin-top: 3rem;
   }
 
+  .content {
+    width: 50vw;
+    margin: 0 2rem;
+  }
+
+  .practical {
+    width: 50vw;
+    margin: 0 2rem;
+  }
+
+  .DetailSection2 {
+    width: 90vw;
+    display: flex;
+  }
+
 }
 
 @media only screen and (min-width: 1247px) {
@@ -1824,47 +1838,4 @@ strong {
   .eventImage {
     width: 55vw;
   }
-
-  /*
-
-  .detail {
-    padding: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 5rem 1fr;
-    grid-template-areas: 'tags tags tags' 'section1 . section2';
-    margin-top: 10rem;
-  }
-
-  .section1 {
-    grid-area: section1;
-  }
-
-  .section2 {
-    grid-area: section2;
-  }
-
-  .tags {
-    grid-area: tags;
-  }
-
-  .GeelInfoBlok {
-    background-color: var(--lightyellow);
-    display: flex;
-    justify-content: space-around;
-    width: 40vw;
-    margin-top: 5rem;
-    height: 43rem;
-  }
-
-  .articleDate::before {
-    width: .5rem;
-    background-color: var(--yellow);
-    height: 30rem;
-  }
-
-  .yellowline {
-    fill: none;
-    stroke-width: .4rem;
-    stroke: var(--yellow);
-  } */
 }

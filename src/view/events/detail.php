@@ -88,22 +88,23 @@
       <p><ul  class="organisators"><?php foreach($event['organisers'] as $name): ?><li> - <?php echo $name['name'];?></li><?php endforeach;?></ul></p>
     </section>
   </div>
+  <div class="DetailSection2">
+    <section class="content">
+      <!-- <h2 class=""><?php echo $event['title']; ?></h2> -->
+      <h3 class="practicalTitle">Informatie</h3>
+      <p class="infoP"><?php echo $event['content'];?></p>
+    </section>
 
-  <section class="content">
-    <!-- <h2 class=""><?php echo $event['title']; ?></h2> -->
-    <h3 class="practicalTitle">Informatie</h3>
-    <p class="infoP"><?php echo $event['content'];?></p>
-  </section>
-
-  <section class="practical">
-    <?php if($event['practical'] === ""){ ?>
-    <?php echo " ";
-      }else{
-    ?>
-    <h3 class="practicalTitle">Praktisch</h3>
-    <?php
-      }
-    ?>
-    <p class="infoP"><?php echo $event['practical'];?></p>
-  </section>
+    <section class="practical">
+      <?php if($event['practical'] === ""){ ?>
+      <?php echo " ";
+        }else{
+      ?>
+      <h3 class="practicalTitle">Praktisch</h3>
+      <?php
+        }
+      ?>
+      <p class="infoP"><?php echo $event['practical'];?></p>
+    </section>
+  </div>
 </main>
