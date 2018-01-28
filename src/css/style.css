@@ -31,12 +31,6 @@ input {
   width: 100vw;
 }
 
-.headerimage {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-}
-
 li {
   list-style: none;
 }
@@ -595,6 +589,159 @@ a {
   font-size: 1.3rem;
 }
 
+/* detail */
+
+.weekvdmobiliteitDetail {
+  display: none;
+}
+
+.detailTitle {
+  font-size: 2rem;
+  font-family: 'Avenir Next';
+  width: 100vw;
+  margin: 0 auto;
+  line-height: 3rem;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: .5rem 0;
+  margin-bottom: 3rem;
+
+}
+
+.detail {
+  /* padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 5rem 1fr;
+  grid-template-areas: 'tags tags tags' 'section1 . section2';
+  margin-top: 10rem; */
+}
+
+.section1 {
+  /* grid-area: section1; */
+}
+
+.section2 {
+  /* grid-area: section2; */
+}
+
+.tags {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: 90vw;
+  margin: 0 auto;
+  /* grid-area: tags; */
+}
+
+.tag {
+  font-size: 1.3rem;
+  padding: .3rem 1rem;
+  margin: .7rem;
+  background-color: var(--lightyellow);
+  border-radius: 1rem;
+}
+
+/* .titledetail {
+  font-size: 4.8rem;
+  line-height: 5rem;
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+} */
+
+strong {
+  font-weight: bold;
+}
+
+.GeelInfoBlok {
+  background-color: var(--lightyellow);
+  /* display: flex;
+  justify-content: space-around; */
+  width: 100vw;
+  font-size: 1.3rem;
+  /* margin-top: 5rem; */
+  /* height: 43rem; */
+
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'icon adres locatie'
+    'icon datum uur'
+    'icon organisators organisators'; */
+
+  display: grid;
+  grid-template-columns: 5rem 1fr 1fr;
+  grid-template-areas:
+    'iconAdres adres locatie'
+    'iconDate datum uur'
+    'iconOrganisator organisators organisators';
+
+  grid-row-gap: 3rem;
+  padding: 2rem;
+}
+
+.iconAdres {
+  grid-area: iconAdres;
+  width: 2.5rem;
+}
+
+.iconDate {
+  grid-area: iconDate;
+  width: 3rem;
+}
+
+.iconOrganisator {
+  grid-area: iconOrganisator;
+  width: 3.5rem;
+}
+
+.address {
+  grid-area: adres;
+  padding-right: 3rem;
+}
+
+.locatie {
+  grid-area: locatie;
+}
+
+.datumDetail {
+  grid-area: datum;
+  padding-right: 3rem;
+}
+
+.timeDetail {
+  grid-area: uur;
+}
+
+.organisators {
+  grid-area: organisators;
+  flex-wrap: wrap;
+}
+
+.infoblok {
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.yellowline {
+
+  display: none;
+  fill: none;
+  stroke-width: .4rem;
+  stroke: var(--yellow);
+}
+
+.eventImage {
+  width: 100vw;
+  height: 17.5rem;
+  object-fit: cover;
+  margin-top: 3rem;
+}
+
+.headerimage {
+  display: none;
+}
+
 @media only screen and (min-width: 360px) {
 
   .CFF_image {
@@ -1006,6 +1153,12 @@ a {
 
   /* eigen activiteit */
 
+  .headerimage {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
   .eigenActiviteit {
     width: 50vw;
   }
@@ -1076,6 +1229,13 @@ a {
 
   .filterDays {
     width: 50vw;
+  }
+
+  /* Detail */
+
+  .weekvdmobiliteitDetail {
+    border-color: var(--blue);
+    display: block;
   }
 }
 
@@ -1508,13 +1668,13 @@ a {
 
   /* headerDetail */
 
-  .headerDetail {
+  /* .headerDetail {
     background-color: var(--lightyellow);
-  }
+  } */
 
   /* detail */
 
-  .detailTitle {
+  /* .detailTitle {
     width: 55rem;
     margin: 0 auto;
     line-height: 7rem;
@@ -1578,5 +1738,5 @@ a {
     object-fit: cover;
     z-index: -4;
     margin-top: 5rem;
-  }
+  } */
 }

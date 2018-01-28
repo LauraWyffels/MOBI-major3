@@ -61,6 +61,7 @@ class EventsController extends Controller {
         'comparator' => '=',
         'value' => $_GET['tag']
       );
+
     }
 
     $this->set('title', 'activiteiten');
