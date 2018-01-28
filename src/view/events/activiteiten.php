@@ -1,19 +1,4 @@
 <main>
-<!--
-  <header class="headerActiviteiten">
-    <div class="titleActiviteit">
-      <h1  class="activiteiten">Activiteiten</h1>
-      <p class="weekvdmobiliteit">Week van de mobiliteit</p>
-    </div>
-    <div  class="backgroundheader">
-      <img src="assets/images/backgroundheader2.png" alt="weekVanDeMobiliteit" width="578" height="501">
-    </div>
-    <div class="girl_bike2">
-      <img src="assets/images/bike_girl_left.png" alt="weekVanDeMobiliteit" width="415" height="402">
-      <img src="assets/images/bike_girl_right.png" alt="weekVanDeMobiliteit" width="415" height="402">
-    </div>
-  </header> -->
-
   <header class="headerActiviteiten">
     <div class="titleActiviteit">
       <h1  class="activiteiten">Activiteiten</h1>
@@ -43,7 +28,7 @@
       <fieldset class="fieldsetSearch">
         <div class="zoekbalk">
           <img src="assets/images/search.svg" alt="" width="40" height="40" class="searchimage">
-          <input type="search" name="query" class="searchinput" placeholder="Zoek een event..." id="search">
+          <input type="search" name="query" class="searchinput" placeholder="Zoek een event..." id="search"  <?php if(!empty($_GET['query'])) echo 'value="' . $_GET['query'] . '"';?>>
         </div>
         <input type="hidden" name="page" value="activiteiten">
         <input type="submit" name="action" value="Zoek" class="submitSearch">
@@ -53,7 +38,7 @@
 
   <section  class="filter">
     <h2 class="hide">Filters</h2>
-    <form action="index.php?page=activiteiten" method="get" class="formFilter">
+    <form action="index.php?page=activiteiten&city=&postal=" method="get" class="formFilter">
       <fieldset class="fieldsetFilter">
         <input type="hidden" name="page" value="activiteiten">
         <div class="divFilter">
@@ -62,11 +47,11 @@
             <div class="plaats">
               <label class="column">
                 <span>Postcode</span>
-                <input type="text" name="postal" class="inputplaats inputPostcode" placeholder="8500">
+                <input type="number" name="postal" class="inputplaats inputPostcode" placeholder="...." <?php if(!empty($_GET['postal'])) echo 'value="' . $_GET['postal'] . '"';?>>
               </label>
               <label class="column">
                 <span>Stad</span>
-                <input type="text" name="city" class="inputplaats inputplaatsStad" placeholder="Kortrijk" id="city" value="<?php echo $_GET['city']; ?>">
+                <input type="text" name="city" class="inputplaats inputplaatsStad" id="city"  <?php if(!empty($_GET['city'])) echo 'value="' . $_GET['city'] . '"';?>>
               </label>
             </div>
           </section>
@@ -76,31 +61,31 @@
               <div class="filterDays">
 
               <label  class="filterDay">
-                <input type="radio" name="select" value="2018-09-16" class="radio">
-                <p class="pRadio">Ma 16/09</p>
+                <input type="radio" name="select" value="2018-09-16" class="radio" <?php if(!empty($_GET['select']) && $_GET['select'] == '2018-09-16') echo 'checked';?>>
+                <p class="pRadio" >Ma 16/09</p>
               </label>
               <label  class="filterDay">
-                <input type="radio" name="select" value="2018-09-17" class="radio">
+                <input type="radio" name="select" value="2018-09-17" class="radio"<?php if(!empty($_GET['select']) && $_GET['select'] == '2018-09-17') echo 'checked';?>>
                 <p class="pRadio">Di 17/09</p>
               </label>
               <label  class="filterDay">
-                <input type="radio" name="select" value="2018-09-18" class="radio">
+                <input type="radio" name="select" value="2018-09-18" class="radio"<?php if(!empty($_GET['select']) && $_GET['select'] == '2018-09-18') echo 'checked';?>>
                 <p class="pRadio">Woe 18/09</p>
               </label>
               <label  class="filterDay">
-                <input type="radio" name="select" value="2018-09-19" class="radio">
+                <input type="radio" name="select" value="2018-09-19" class="radio"<?php if(!empty($_GET['select']) && $_GET['select'] == '2018-09-19') echo 'checked';?>>
                 <p class="pRadio">Do 19/09</p>
               </label>
               <label  class="filterDay">
-                <input type="radio" name="select" value="2018-09-20" class="radio">
+                <input type="radio" name="select" value="2018-09-20" class="radio" <?php if(!empty($_GET['select']) && $_GET['select'] == '2018-09-20') echo 'checked';?>>
                 <p class="pRadio">Vrij 20/09</p>
               </label>
               <label  class="filterDay">
-                <input type="radio" name="select" value="2018-09-21" class="radio">
+                <input type="radio" name="select" value="2018-09-21" class="radio"<?php if(!empty($_GET['select']) && $_GET['select'] == '2018-09-21') echo 'checked';?>>
                 <p class="pRadio">Zat 21/09</p>
               </label>
               <label  class="filterDay">
-                <input type="radio" name="select" value="2018-09-22" class="radio">
+                <input type="radio" name="select" value="2018-09-22" class="radio"<?php if(!empty($_GET['select']) && $_GET['select'] == '2018-09-22') echo 'checked';?>>
                 <p class="pRadio">Zon 22/09</p>
               </label>
             </div>

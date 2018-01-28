@@ -1,4 +1,4 @@
-<header class="headerDetail">
+<header class="headerActiviteiten">
   <div class="titleActiviteit">
     <h1  class="detailTitle"><?php echo $event['title']; ?></h1>
     <p class="weekvdmobiliteitDetail">Week van de mobiliteit</p>

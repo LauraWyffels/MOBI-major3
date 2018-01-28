@@ -61,10 +61,10 @@
           <a href="index.php"><img src="assets/images/house.svg" alt="home" width="25" height="25"></a>
         </li>
         <li class="navActiviteiten">
-          <a href="index.php?page=activiteiten&city=" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?> pijltje">Events</a>
+          <a href="index.php?page=activiteiten" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?> pijltje">Events</a>
           <ul class="subNavigatie">
             <li class="subNavigatieA">
-              <a href="index.php?page=activiteiten&city=" class="a">Alle activiteiten</a>
+              <a href="index.php?page=activiteiten" class="a">Alle activiteiten</a>
             </li>
             <li class="subNavigatieA">
               <a href="#" class="a">Eigen activiteit</a>
@@ -113,10 +113,10 @@
           <a href="index.php"><img src="assets/images/house.svg" alt="home" width="25" height="25" class="homeIcon"></a>
         </li>
         <li class="navActiviteiten">
-          <a href="index.php?page=activiteiten&city=" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?> pijltje">Events</a>
+          <a href="index.php?page=activiteiten" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?> pijltje">Events</a>
           <ul class="subNavigatie">
             <li class="subNavigatieA">
-              <a href="index.php?page=activiteiten&city=" class="a">Alle events</a>
+              <a href="index.php?page=activiteiten" class="a">Alle events</a>
             </li>
             <li class="subNavigatieA">
               <a href="#" class="a">Eigen event</a>
