@@ -7,7 +7,7 @@
       <a href="index.php?page=detail&amp;id=22" class="ctahome">Meer info</a>
     </div>
     <img
-      sizes="(max-width: 430px) 50vw, (max-width: 500px) 45vw,  (max-width: 1800px) 35vw"
+      sizes="(max-width: 430px) 50vw, (max-width: 500px) 45vw,  (max-width: 2500px) 35vw"
       srcset="
       assets/images/carFreeFestival_200.png 200w,
       assets/images/carFreeFestival_280.png 280w,
@@ -23,7 +23,7 @@
     <h2 class="CFD_title h2Home">CAR FREE DAY</h2>
     <div class="carFreeDay">
     <img
-      sizes="(max-width: 320px) 50vw, (max-width: 1800px) 35vw"
+      sizes="(max-width: 320px) 50vw, (max-width: 2500px) 35vw"
       srcset="
       assets/images/carFreeDay_200.png 200w,
       assets/images/carFreeDay_293.png 293w,
@@ -41,7 +41,7 @@
 
   <section class="flex strapdag">
     <img
-    sizes="(max-width: 450px) 70vw, (max-width: 930px) 50vw, (max-width: 1800px) 45vw"
+    sizes="(max-width: 450px) 70vw, (max-width: 930px) 50vw, (max-width: 2500px) 45vw"
     srcset="
     assets/images/strapdag_200.png 200w,
     assets/images/strapdag_257.png 257w,

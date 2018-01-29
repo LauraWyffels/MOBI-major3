@@ -61,14 +61,34 @@ class EventsController extends Controller {
         'comparator' => '=',
         'value' => $_GET['tag']
       );
-
     }
+
 
     $this->set('title', 'activiteiten');
     $this->set('currentPage', 'activiteiten');
 
     $events = $this->eventDAO->search($conditions);
-    $this->set('events',$events);
+    // $this->set('events',$events);
+
+    // JS
+
+    foreach ($events as &$event) {
+      $event['startFormatted'] = date('d/m', strtotime($event['start']));
+      $event['endFormatted'] = date('d/m', strtotime($event['end']));
+      $event['startTimeFormatted'] = date('H:i', strtotime($event['start']));
+      $event['endTimeFormatted'] = date('d/m', strtotime($event['end']));
+    }
+
+    // if (!empty($_GET['query'])) {
+      // $events = $this->eventDAO->search($_GET['query']);
+      // }
+      $this->set('events', $events);
+
+    if ($_SERVER['HTTP_ACCEPT'] == 'application/json') {
+      header('Content-Type: application/json');
+      echo json_encode($events);
+      exit();
+    }
   }
 
   public function detail() {

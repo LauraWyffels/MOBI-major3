@@ -161,7 +161,7 @@ a {
 
 .pHome {
   font-size: 1.3rem;
-  line-height: 2rem;
+  line-height: 2.3rem;
 }
 
 /* CAR FREE FESTIVAL */
@@ -183,6 +183,7 @@ a {
 .pCarFreeFestival {
   width: 40vw;
   margin-bottom: 6rem;
+  padding-right: 1rem;
 }
 
 .ctahome {
@@ -624,10 +625,24 @@ a {
   border-radius: 1rem;
 }
 
-strong {
-  font-weight: bold;
-  color: var(--pink);
-  font-size: 1.8rem;
+.DetailSection2 {
+  font-size: 3rem;
+
+  & h3 {
+    font-weight: bold;
+    color: var(--pink);
+    font-size: 2rem;
+  }
+
+  & h4 {
+
+    color: var(--pink);
+    font-size: 1.8rem;
+  }
+
+  & p {
+    font-size: 1.6rem;
+  }
 }
 
 .GeelInfoBlok {

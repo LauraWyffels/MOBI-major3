@@ -91,20 +91,15 @@
   <div class="DetailSection2">
     <section class="content">
       <!-- <h2 class=""><?php echo $event['title']; ?></h2> -->
-      <h3 class="practicalTitle">Informatie</h3>
+      <h2 class="practicalTitle">Informatie</h2>
       <p class="infoP"><?php echo $event['content'];?></p>
     </section>
 
     <section class="practical">
-      <?php if($event['practical'] === ""){ ?>
-      <?php echo " ";
-        }else{
-      ?>
-      <h3 class="practicalTitle">Praktisch</h3>
-      <?php
-        }
-      ?>
-      <p class="infoP"><?php echo $event['practical'];?></p>
+      <?php if($event['practical']): ?>
+        <h2 class="practicalTitle">Praktisch</h2>
+        <p class="infoP"><?php echo $event['practical'];?></p>
+      <?php endif ?>
     </section>
   </div>
 </main>

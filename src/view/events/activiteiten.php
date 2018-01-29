@@ -24,7 +24,7 @@
   </header>
 
   <section class="search">
-    <form class="" action="index.php?page=activiteiten" method="get">
+    <form class="" action="index.php?page=activiteiten" method="get" id="searchForm">
       <fieldset class="fieldsetSearch">
         <div class="zoekbalk">
           <img src="assets/images/search.svg" alt="" width="40" height="40" class="searchimage">
@@ -97,15 +97,13 @@
 </section>
 
 
-  <section class="events">
+  <section class="events" id="events">
     <?php foreach($events as $event): ?>
       <article class="eventArticle">
         <header><h1 class="eventTitle"><?php echo $event['title']; ?></h1></header>
         <a href="index.php?page=detail&amp;id=<?php echo $event['id'];?>">
-        <div class="eventsDriehoek">
-        </div>
-            <img src="assets/images/events/<?php echo $event['code'];?>.jpg" alt="" width="500" height="360" class="eventsImage">
-
+        <div class="eventsDriehoek"></div>
+        <img src="assets/images/events/<?php echo $event['code'];?>.jpg" alt="" width="500" height="360" class="eventsImage">
         <div class="eventTimeDiv">
           <h3 class="eventTimeTitle">Time</h3>
           <p class="eventTime">start: <?php echo date('G', strtotime($event['start']));?>:<?php echo date('i', strtotime($event['start']));?> uur
