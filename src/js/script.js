@@ -48,7 +48,7 @@
     const city = $inputCity.value.trim();
     const date = $inputDate.value;
 
-    fetch(`index.php?page=activiteiten&date=${date}&postal=${postal}&city=${city}`, {
+    fetch(`index.php?date=${date}&postal=${postal}&city=${city}&page=activiteiten`, {
       headers: new Headers({
         Accept: `application/json`,
       }),
@@ -57,8 +57,8 @@
       .then(data => handleLoadEvents(data));
 
 
-    const handleLoadEvents = data => {
-      $events.innerHTML = data
+    const handleLoadEvents = results => {
+      $events.innerHTML = results
         .map(event => createEvent(event))
         .join(``);
     };
@@ -68,7 +68,7 @@
     if (event.startFormatted === event.endFormatted){
       return `
     <article class="eventArticle">
-        <header><h1 class="eventTitle">${event.title}</h1></header>
+        <h2 class="eventTitle">${event.title}</h2>
         <a href="index.php?page=detail&amp;id=<?php echo $event['id'];?>">
         <div class="eventsDriehoek"></div>
         <img src="assets/images/events/${event.code}.jpg" alt="" width="500" height="360" class="eventsImage">
@@ -81,10 +81,12 @@
 
         <div class="eventInfo">
           <section class="eventsAdres">
+            <h3 class="hide">adress</h3>
             <p>${event.address}
             <br>${event.postal} ${event.city}</p>
           </section>
           <section>
+            <h3 class="hide">datum</h3>
             <p class="eventsDatum">${event.startFormatted} september 2018</p>
           </section>
         </div>
@@ -105,12 +107,14 @@
 
           <div class="eventInfo">
             <section class="eventsAdres">
+              <h3 class="hide">adress</h3>
               <p>${event.address}
               <br>${event.postal} ${event.city}</p>
             </section>
             <section>
-              <p class="eventsDatum">${event.startFormatted} september 2018</p>
-              <br>tot <${event.endFormatted} september 2018</p>
+              <h3 class="hide">datum</h3>
+              <p class="eventsDatum">${event.startFormatted} september 2018
+              <br>tot ${event.endFormatted} september 2018</p>
             </section>
           </div>
         </article>`;

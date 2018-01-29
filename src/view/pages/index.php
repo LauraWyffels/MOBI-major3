@@ -14,6 +14,7 @@
       assets/images/carFreeFestival_345.png 345w,
       assets/images/carFreeFestival_406.png 406w,
       assets/images/carFreeFestival_459.png 459w"
+      src="assets/images/carFreeFestival_459.png"
 
       alt="trein" class="CFF_image">
     <!-- <img src="assets/images/carFreeFestival.png" alt="trein" width="442" height="665"> -->
@@ -33,6 +34,7 @@
       assets/images/carFreeDay_468.png 468w,
       assets/images/carFreeDay_473.png 473w,
       assets/images/carFreeDay_476.png 476w"
+      src="assets/images/carFreeDay_476.png"
       alt="">
     <!-- <img src="assets/images/carFreeDay.png" alt="tram" width="476" height="828"> -->
       <p class="pCarFreeDay pHome">De donderdag vragen we werkgevers om één dag extra aandacht te besteden aan duurzame woon-werkmobiliteit en medewerkers aan te moedigen om zonder auto naar het werk te komen.</p>
@@ -50,6 +52,7 @@
     assets/images/strapdag_392.png 392w,
     assets/images/strapdag_432.png 432w,
     assets/images/strapdag_468.png 468w"
+    src="assets/images/strapdag_468.png"
     alt="" class="imageStrapdag">
   <div class="tekstStrapdag">
     <p class="kinderen">Voor kinderen</p>
@@ -62,6 +65,7 @@
 </section>
 
 <section class="autovrij_eigenActiviteit">
+  <h2 class="hide">autovrij_eigenActiviteit</h2>
   <section class="autovrijeZondag">
     <div class="divAutovrijeZondag">
       <h2 class="AZ_title h2Home">AUTOVRIJE ZONDAG</h2>

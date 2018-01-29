@@ -73,15 +73,12 @@ class EventsController extends Controller {
     // JS
 
     foreach ($events as &$event) {
-      $event['startFormatted'] = date('d/m', strtotime($event['start']));
-      $event['endFormatted'] = date('d/m', strtotime($event['end']));
+      $event['startFormatted'] = date('d', strtotime($event['start']));
+      $event['endFormatted'] = date('d', strtotime($event['end']));
       $event['startTimeFormatted'] = date('H:i', strtotime($event['start']));
-      $event['endTimeFormatted'] = date('d/m', strtotime($event['end']));
+      $event['endTimeFormatted'] = date('H:i', strtotime($event['end']));
     }
 
-    // if (!empty($_GET['query'])) {
-      // $events = $this->eventDAO->search($_GET['query']);
-      // }
       $this->set('events', $events);
 
     if ($_SERVER['HTTP_ACCEPT'] == 'application/json') {

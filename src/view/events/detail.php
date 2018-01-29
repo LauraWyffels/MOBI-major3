@@ -18,6 +18,7 @@
       assets/images/header2_982.png 982w,
       assets/images/header2_1049.png 1049w,
       assets/images/header2_1067.png 1067w"
+      src="assets/images/header2_1067.png"
       alt="" class="headerimage">
 </header>
 
@@ -31,6 +32,7 @@
 
   <div class="DetailSection">
     <section>
+      <h2 class="hide">event image</h2>
       <img src="assets/images/events/<?php echo $event['code'];?>.jpg" alt="" width="500" height="360" class="eventImage">
     </section>
     <section class="GeelInfoBlok">
@@ -54,14 +56,8 @@
         }
       ?>
 
-      <!-- <svg  width="4" height="300" viewBox="0 0 4 300"  class="yellowline">
-        <g>
-          <line x1="2.1" y1="0" x2="2.1" y2="300"/>
-        </g>
-      </svg> -->
-
       <h2 class="hide">Datum</h2>
-      <img src="assets/images/icon_time.svg" alt="Datum" width="48,82" height="60" class="iconDate">
+      <img src="assets/images/icon_time.svg" alt="Datum" width="49" height="60" class="iconDate">
       <?php if (date('d', strtotime($event['start'])) === date('d', strtotime($event['end']))){?>
         <p class="datumDetail"><?php echo date('d', strtotime($event['start']));?> september 2018</p>
       <?php
@@ -77,28 +73,21 @@
         <br>end: <?php echo date('G', strtotime($event['end']));?>:<?php echo date('i', strtotime($event['end']));?> uur
       </p>
 
-      <!-- <svg  width="4" height="300" viewBox="0 0 4 300" class="yellowline">
-      <g>
-        <line x1="2.1" y1="0" x2="2.1" y2="300"/>
-      </g>
-      </svg> -->
-
       <h2 class="hide">Organisatoren</h2>
-      <img src="assets/images/icon_organisator.svg" alt="Organisatoren" width="84,67" height="60" class="iconOrganisator">
-      <p><ul  class="organisators"><?php foreach($event['organisers'] as $name): ?><li> - <?php echo $name['name'];?></li><?php endforeach;?></ul></p>
+      <img src="assets/images/icon_organisator.svg" alt="Organisatoren" width="85" height="60" class="iconOrganisator">
+      <ul  class="organisators"><?php foreach($event['organisers'] as $name): ?><li> - <?php echo $name['name'];?></li><?php endforeach;?></ul>
     </section>
   </div>
   <div class="DetailSection2">
     <section class="content">
-      <!-- <h2 class=""><?php echo $event['title']; ?></h2> -->
       <h2 class="practicalTitle">Informatie</h2>
-      <p class="infoP"><?php echo $event['content'];?></p>
+      <article class="infoP"><?php echo $event['content'];?></article>
     </section>
 
     <section class="practical">
       <?php if($event['practical']): ?>
         <h2 class="practicalTitle">Praktisch</h2>
-        <p class="infoP"><?php echo $event['practical'];?></p>
+        <article class="infoP"><?php echo $event['practical'];?></article>
       <?php endif ?>
     </section>
   </div>

@@ -1626,6 +1626,11 @@ a {
     display: flex;
   }
 
+  .detailTitle {
+    width: 55rem;
+    margin-top: 5rem;
+  }
+
 }
 
 @media only screen and (min-width: 1247px) {
@@ -1844,11 +1849,6 @@ a {
   }
 
   /* detail */
-
-  .detailTitle {
-    width: 55rem;
-    margin-top: 5rem;
-  }
 
   .eventImage {
     width: 55vw;

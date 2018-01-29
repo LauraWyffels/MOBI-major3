@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <head>
     <meta charset="utf-8">
     <title>Week van de mobiliteit - major 3</title>
@@ -89,17 +89,17 @@
               </li>
             </ul>
           </li>
-        <div class="navdesk">
-          <li>
-            <a href="#" class="hoverNavigatie">Scholen</a>
-          </li>
-          <li>
-            <a href="#" class="hoverNavigatie">Vorige edities</a>
-          </li>
-          <li>
-            <a href="#" class="hoverNavigatie">Contact</a>
-          </li>
-        </div>
+          <ul class="navdesk">
+            <li>
+              <a href="#" class="hoverNavigatie">Scholen</a>
+            </li>
+            <li>
+              <a href="#" class="hoverNavigatie">Vorige edities</a>
+            </li>
+            <li>
+              <a href="#" class="hoverNavigatie">Contact</a>
+            </li>
+          </ul>
       </ul>
     </nav>
 
@@ -141,7 +141,7 @@
               </li>
             </ul>
           </li>
-        <div class="navdesk">
+        <ul class="navdesk">
           <li>
             <a href="#" class="hoverNavigatie">Scholen</a>
           </li>
@@ -151,7 +151,7 @@
           <li>
             <a href="#" class="hoverNavigatie">Contact</a>
           </li>
-        </div>
+        </ul>
       </ul>
     </nav>
 
@@ -170,6 +170,7 @@
       assets/images/logo_501.png 501w,
       assets/images/logo_521.png 521w,
       assets/images/logo_531.png 531w"
+      src="assets/images/logo_531.png"
       alt="Week van de mobiliteit" class="logo">
 
     <?php

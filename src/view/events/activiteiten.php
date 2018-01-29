@@ -19,11 +19,13 @@
       assets/images/header2_982.png 982w,
       assets/images/header2_1049.png 1049w,
       assets/images/header2_1067.png 1067w"
+      src="assets/images/header2_1067.png"
       alt="" class="headerimage">
 
   </header>
 
   <section class="search">
+    <h2 class="hide">zoekbalk</h2>
     <form class="" action="index.php?page=activiteiten" method="get" id="searchForm">
       <fieldset class="fieldsetSearch">
         <div class="zoekbalk">
@@ -98,9 +100,10 @@
 
 
   <section class="events" id="events">
+    <h2 class="hide">events</h2>
     <?php foreach($events as $event): ?>
       <article class="eventArticle">
-        <header><h1 class="eventTitle"><?php echo $event['title']; ?></h1></header>
+        <h2 class="eventTitle"><?php echo $event['title']; ?></h2>
         <a href="index.php?page=detail&amp;id=<?php echo $event['id'];?>">
         <div class="eventsDriehoek"></div>
         <img src="assets/images/events/<?php echo $event['code'];?>.jpg" alt="" width="500" height="360" class="eventsImage">
@@ -113,10 +116,12 @@
 
         <div class="eventInfo">
         <section class="eventsAdres">
+          <h3 class="hide">adress</h3>
           <p><?php echo $event['address'];?>
             <br><?php echo $event['postal'];?> <?php echo $event['city'];?></p>
         </section>
         <section>
+          <h3 class="hide">datum</h3>
           <?php if (date('d', strtotime($event['start'])) === date('d', strtotime($event['end']))){
             ?>
             <p class="eventsDatum"><?php echo date('d', strtotime($event['start']));?> september 2018</p>
