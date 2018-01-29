@@ -40,7 +40,7 @@
 
   <section  class="filter">
     <h2 class="hide">Filters</h2>
-    <form action="index.php?page=activiteiten&city=&postal=" method="get" class="formFilter">
+    <form action="index.php?page=activiteiten&city=&postal=&select=" method="get" class="formFilter">
       <fieldset class="fieldsetFilter">
         <input type="hidden" name="page" value="activiteiten">
         <div class="divFilter">
@@ -91,16 +91,17 @@
                 <p class="pRadio">Zon 22/09</p>
               </label>
             </div>
-            <input type="submit" name="action" value="Zoek" class="submitFilterForm">
+            <input type="submit" value="Zoek" class="submitFilterForm">
           </section>
         </div>
       </fieldset>
     </form>
-</section>
+  </section>
 
 
   <section class="events" id="events">
     <h2 class="hide">events</h2>
+
     <?php foreach($events as $event): ?>
       <article class="eventArticle">
         <h2 class="eventTitle"><?php echo $event['title']; ?></h2>
@@ -135,6 +136,6 @@
         </section>
         </div>
       </article>
-    <?php endforeach;?>
+    <?php endforeach; ?>
   </section>
 </main>

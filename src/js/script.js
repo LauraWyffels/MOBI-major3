@@ -1,11 +1,10 @@
 {
 
   const $events = document.getElementById(`events`),
-    // $searchForm = document.getElementById(`searchForm`),
     $inputSearch = document.getElementById(`search`),
-    $inputPostal = document.querySelector(`[name="postal"]`),
-    $inputCity = document.querySelector(`[name="city"]`),
-    $inputDate = document.querySelector(`[name="date"]`);
+    $inputPostal = document.querySelector(`.inputPostcode`),
+    $inputCity = document.querySelector(`.inputplaatsStad`),
+    $clickDate = document.querySelectorAll(`[name="select"]`);
 
   const init = () => {
     if ($inputSearch) {
@@ -20,8 +19,8 @@
       $inputCity.addEventListener(`input`, handleFilter);
     }
 
-    if ($inputDate) {
-      $inputDate.addEventListener(`input`, handleFilter);
+    if ($clickDate) {
+      $clickDate.addEventListener(`click`, handleFilter);
     }
   };
 
@@ -44,11 +43,14 @@
   };
 
   const handleFilter = () => {
+    console.log(city);
+    console.log($inputPostal.value);
+    // console.log(date);
     const postal = $inputPostal.value.trim();
     const city = $inputCity.value.trim();
-    const date = $inputDate.value;
+    const date = $clickDate.value;
 
-    fetch(`index.php?date=${date}&postal=${postal}&city=${city}&page=activiteiten`, {
+    fetch(`index.php?page=activiteiten&city=${city}&postal=${postal}&select=${date}`, {
       headers: new Headers({
         Accept: `application/json`,
       }),

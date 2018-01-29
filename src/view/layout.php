@@ -57,7 +57,7 @@
 
     <nav>
       <ul class="navigatie">
-        <li >
+        <li>
           <a href="index.php"><img src="assets/images/house.svg" alt="home" width="25" height="25"></a>
         </li>
         <li class="navActiviteiten">
@@ -74,21 +74,21 @@
         <li>
           <a href="#" class="hoverNavigatie">Informatie</a>
         </li>
-          <li class="navmobile navActiviteiten">
-            <a href="#" class="hoverNavigatie pijltje">Meer</a>
-            <ul class="subNavigatie">
-
-              <li class="subNavigatieMeer">
-                <a href="#" class="hoverNavigatie">Scholen</a>
-              </li>
-              <li class="subNavigatieMeer">
-                <a href="#" class="hoverNavigatie">Vorige edities</a>
-              </li>
-              <li class="subNavigatieMeer">
-                <a href="#" class="hoverNavigatie">Contact</a>
-              </li>
-            </ul>
-          </li>
+        <li class="navmobile navActiviteiten">
+          <a href="#" class="hoverNavigatie pijltje">Meer</a>
+          <ul class="subNavigatie">
+            <li class="subNavigatieMeer">
+              <a href="#" class="hoverNavigatie">Scholen</a>
+            </li>
+            <li class="subNavigatieMeer">
+              <a href="#" class="hoverNavigatie">Vorige edities</a>
+            </li>
+            <li class="subNavigatieMeer">
+              <a href="#" class="hoverNavigatie">Contact</a>
+            </li>
+          </ul>
+        </li>
+        <li>
           <ul class="navdesk">
             <li>
               <a href="#" class="hoverNavigatie">Scholen</a>
@@ -100,6 +100,7 @@
               <a href="#" class="hoverNavigatie">Contact</a>
             </li>
           </ul>
+        </li>
       </ul>
     </nav>
 
@@ -109,49 +110,50 @@
 
     <nav class="nav">
       <ul class="navigatie navigatie2">
-        <li >
-          <a href="index.php"><img src="assets/images/house.svg" alt="home" width="25" height="25" class="homeIcon"></a>
+        <li>
+          <a href="index.php"><img src="assets/images/house.svg" alt="home" width="25" height="25"></a>
         </li>
         <li class="navActiviteiten">
           <a href="index.php?page=activiteiten" class="hoverNavigatie<?php if($currentPage == 'activiteiten') echo ' active';?> pijltje">Events</a>
           <ul class="subNavigatie">
             <li class="subNavigatieA">
-              <a href="index.php?page=activiteiten" class="a">Alle events</a>
+              <a href="index.php?page=activiteiten" class="a">Alle activiteiten</a>
             </li>
             <li class="subNavigatieA">
-              <a href="#" class="a">Eigen event</a>
+              <a href="#" class="a">Eigen activiteit</a>
             </li>
           </ul>
         </li>
         <li>
           <a href="#" class="hoverNavigatie">Informatie</a>
         </li>
-          <li class="navmobile navActiviteiten">
-            <a href="#" class="hoverNavigatie pijltje">Meer</a>
-            <ul class="subNavigatie">
-
-              <li class="subNavigatieMeer">
-                <a href="#" class="hoverNavigatie">Scholen</a>
-              </li>
-              <li class="subNavigatieMeer">
-                <a href="#" class="hoverNavigatie">Vorige edities</a>
-              </li>
-              <li class="subNavigatieMeer">
-                <a href="#" class="hoverNavigatie">Contact</a>
-              </li>
-            </ul>
-          </li>
-        <ul class="navdesk">
-          <li>
-            <a href="#" class="hoverNavigatie">Scholen</a>
-          </li>
-          <li>
-            <a href="#" class="hoverNavigatie">Vorige edities</a>
-          </li>
-          <li>
-            <a href="#" class="hoverNavigatie">Contact</a>
-          </li>
-        </ul>
+        <li class="navmobile navActiviteiten">
+          <a href="#" class="hoverNavigatie pijltje">Meer</a>
+          <ul class="subNavigatie">
+            <li class="subNavigatieMeer">
+              <a href="#" class="hoverNavigatie">Scholen</a>
+            </li>
+            <li class="subNavigatieMeer">
+              <a href="#" class="hoverNavigatie">Vorige edities</a>
+            </li>
+            <li class="subNavigatieMeer">
+              <a href="#" class="hoverNavigatie">Contact</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="navdesk">
+            <li>
+              <a href="#" class="hoverNavigatie">Scholen</a>
+            </li>
+            <li>
+              <a href="#" class="hoverNavigatie">Vorige edities</a>
+            </li>
+            <li>
+              <a href="#" class="hoverNavigatie">Contact</a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
 

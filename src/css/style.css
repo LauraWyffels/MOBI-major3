@@ -1103,9 +1103,9 @@ a {
   }
 
   .navdesk {
-    width: 55vw;
+    width: 45vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   /* home */
@@ -1392,7 +1392,7 @@ a {
   }
 
   .navdesk {
-    width: 43vw;
+    width: 35vw;
   }
 
   .wvdm {
@@ -1644,7 +1644,7 @@ a {
   }
 
   .navdesk {
-    width: 35vw;
+    width: 30vw;
   }
 
   /* CAR FREE FESTIVAL */

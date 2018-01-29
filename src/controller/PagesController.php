@@ -9,19 +9,4 @@ class PagesController extends Controller {
     $this->set('title', 'Home');
     $this->set('currentPage', 'home');
   }
-
-  // public function activiteiten() {
-  //   $this->set('title', 'activiteiten');
-  //   $this->set('currentPage', 'activiteiten');
-  //
-  //   $EventDAO = new EventDAO();
-  //   $events = $EventDAO->selectAll();
-  //   $this->set('events',$events);
-  // }
-
-
-
-
-
-
 }
